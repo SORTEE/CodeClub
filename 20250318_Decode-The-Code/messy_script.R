@@ -14,8 +14,7 @@ for (i in 1:nrow(penguinsData)){
   } else {
     penguinsData$newCol[i] = "small"  } } 
 
-penguinsData$randSample <- sample(1:100, nrow(penguinsData), replace = T) # No set.seed()
-
+penguinsData$randSample <- sample(1:100, nrow(penguinsData), replace = T) 
 
 species_unique <- unique(penguinsData$species)
 
