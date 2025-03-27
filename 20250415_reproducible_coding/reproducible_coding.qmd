@@ -1,0 +1,253 @@
+---
+title: "Introduction to Reproducible Coding Environment"
+format:
+  revealjs:
+    incremental: true
+    logo: "/img/main_green.png"
+    theme: sortee_style.scss
+    height: 900
+    width: 1600
+    transition: fade
+    code-line-numbers: true
+---
+
+## Welcome
+
+::: notes
+Today we'll chat about reproducible coding environments in R. We'll cover what reproducibility means, why it matters, and look at practical ways to make your research and data analysis easier to repeat and share.
+:::
+
+## About Code Club
+
+:::: columns
+::: {.column width="50%"}
+![](img/sortee_codeclub-white.png)
+:::
+
+::: {.column width="50%"}
+SORTEE Code Club is an online meeting where **people come together to learn, share, and collaborate on coding-related topics** in an informal and supportive environment
+:::
+::::
+
+## SORTEE Resources
+
+Do you know about **SORTEE Resources**? <br><br>
+
+::::: columns
+::: {.column width="50%"}
+[SORTEE Library of Code Mistakes](https://docs.google.com/presentation/d/12QN3WUc5v1Df7OArEox2U7l_N_qnHHuwzjCYiI4idC8/edit#slide=id.g2c3d428e31a_0_53) <br> <br> [Find an ORTEE Reviewer](https://docs.google.com/spreadsheets/d/1eHdU8o0psUj6Y4dPxqA-uW8Fc8SQVwzY1BnEbXM5k54/edit?gid=0#gid=0) <br> <br> [GitHub SORTEE](https://github.com/SORTEE)
+:::
+
+::: {.column width="50%"}
+![](img/main_green.png)
+:::
+:::::
+
+## Today's Agenda
+
+<br> We'll cover:
+
+-   What reproducibility actually means
+-   Why reproducibility matters
+-   Using R Projects
+-   Managing package dependencies with `renv`
+-   Handling different R versions
+-   Some limitations and tips
+
+*Disclaimer*: today's Code Club will focus on Reproducibility in **R**
+
+## Introduction to Reproducibility in R
+
+A reproducible coding environment is a computational setup with clearly documented code, data, software versions, and methods allowing exact replication of results.
+
+![Original comic from xkcd](img/package-hell.png)
+
+## The Why
+
+Reproducible coding environments:
+
+-   Ensure reliability and credibility of research findings
+-   Facilitate collaborative research and transparent scientific communication
+-   Enable efficient troubleshooting and debugging
+-   Save time by reducing redundant efforts to recreate computational setups
+-   Promote best practices in scientific computing and data analysis
+
+::: notes
+So, why are we talking about reproducible coding environments? Why is a reproducible coding environment important?
+:::
+
+## Understanding Packages📦 and Libraries📘
+
+:::::::: columns
+:::::: {.column width="60%"}
+::: fragment
+Collections of functions, data, and compiled code that extend R’s functionality
+:::
+
+<br>
+
+::: fragment
+**Packages📦** reside within a **library📘**, a directory on your computer where R stores installed packages
+:::
+
+<br>
+
+::: fragment
+Managing package versions matters for:
+
+-   **Version control**
+-   **Transparency**
+-   **Open projects**
+:::
+::::::
+
+::: {.column width="40%"}
+![R Packages (2e)](https://r-pkgs.org/diagrams/install-load.png)
+:::
+::::::::
+
+::: notes
+Tracking and communicating package versions is essential for true reproducibility
+
+-   It is important to KNOW that running the same code with different versions of the same package may show different results. Thus, knowing exactly which package version your analysis uses helps prevent inconsistencies. -Clearly specifying the exact versions of libraries and packages used in your project helps ensure that collaborators or reviewers can replicate your analysis
+-   This is also true for anyone accessing your project to reliably reproduce your results, including yourself in the future!
+:::
+
+## The How
+
+There is no single solution or perfect approach to reproducibility <br><br> Instead, there are a collection of **various best strategies** that you can use!
+
+![](https://solutions.posit.co/envs-pkgs/environments/spectrum-1.png){.centered}
+
+## Example
+
+For example, consider different ways of referencing file paths in your R scripts:
+
+``` {.r code-line-numbers="1-3|5-7|9-11|13-15"}
+# Bad: absolute path
+setwd("C:/Users/MyName/Documents/Project/Data")
+data <- read.csv("data.csv")
+
+# OK: relative path extensively documented in README (but fragile!)
+setwd("~/Downloads/Data")
+data <- read.csv("data.csv")
+
+# Better: using here package, but without RProject the structure is unclear
+library(here)
+data <- read.csv(here("Data", "data.csv"))
+
+# Best: explicit use of an R project (.Rproj file) ensures 'here()' always resolves correctly
+library(here)
+data <- read.csv(here("Data", "data.csv"))
+```
+
+::: notes
+It's important to begin implementing reproducible practices incrementally, building up complexity and robustness over time rather than aiming for perfection from the start.
+:::
+
+## The How: .RProject
+
+R Projects is a way to organize all your analysis files into one easy-to-use place. <br><br>
+
+R Projects make your life easier because:
+
+-   Paths are simple(r)
+-   Easy collaboration
+-   Less confusion
+
+## Example : .RProject
+
+For example:
+
+![](img/Rproj1.png){width="40%"}
+
+![](img/Rproj2.png){.fragment width="50%"}
+
+::: notes
+R Projects is one of the simplest and most effective ways to quickly become more reproducible. When you create an R Project, you get a special `.Rproj` file that marks the project's root directory, meaning everything you do in that project stays nicely contained. - Paths are simple(r): You don't have to worry about absolute paths that break when you move your files. Every file path you use is relative to your project, so it's easy to share and move around without things breaking. - Easy collaboration: Because all your project's files are in one clear place, anyone who receives your project can easily set it up on their computer and run your code exactly as you intended. - Less confusion: No more wondering where files are stored or which files belong to your analysis. Everything related to your project stays together and is clearly structured.
+:::
+
+## .RProject is not enough alone
+
+::: fragment
+Even tho an R Project helps organize your analysis into one coherent location... <br><br>
+:::
+
+::: fragment
+... You still need a **structured directory layout** to organize your file inside this project to get the most out of it
+:::
+
+## .RProject is not enough alone
+
+::::: columns
+::: {.column width="50%"}
+Not this! ![](img/cauldron.png)
+:::
+
+::: {.column width="50%"}
+But this! ![NCEAS Learning Hub’s coreR Course](https://learning.nceas.ucsb.edu/2023-04-coreR/images/rproj-basic-organization.png){.fragment}
+:::
+:::::
+
+::: notes
+Having an R project is a good start, but you still need to organise your files in a meaningful way, you can't just throw everything in the same cauldron.
+:::
+
+## The How: Managing Packages with `renv`
+
+`renv` helps make your R projects reproducible by managing your package dependencies
+
+-   It records which packages (and their versions) you're using in your project.
+-   It helps you avoid package version conflicts across different projects.
+-   It ensures that your project setup can be easily replicated later.
+
+::: notes
+renv stands for "R environment," and it's a package designed to keep your R project's packages consistent and reproducible. Think of it like taking a "snapshot" of exactly which R packages you're using in your project, including their exact versions.
+
+Why does this matter? Because packages in R are constantly being updated, and sometimes updates change the way packages behave. Without controlling package versions, your code might run perfectly today but fail or give different results a few months down the line.
+:::
+
+## Using renv: Step-by-Step
+
+**Step 1: Initialize & Snapshot (`renv::init()` and `renv::snapshot()`)**
+
+-   Create an isolated library for your project
+-   Save exact versions of packages you're using into a file `renv.lock`
+
+<br>
+
+**Step 2: The renv.lock file**
+
+-   Lists exact package versions and sources
+-   Ensures integrity and authenticity of packages
+
+<br> **Step 3: Restore (`renv::restore()`)**
+
+-   Recreates your exact environment on any computer by installing packages from the `renv.lock` file
+
+<br>
+
+::: notes
+renv greatly simplifies reproducing the exact environment and package setup used in your project
+:::
+
+## Limitations
+
+`renv` doesn't handle:
+
+-   R itself (versions)
+-   System dependencies (compilers, external libraries)
+
+![](https://github.com/shannonpileggi/renv-challenges/raw/main/img/renv_choice_1.jpg)
+
+::: notes
+However, no single tool handles everything. One of the limitations most R users forget abut renv is that renv does not handle R versions. So you could have a perfectly documented, saved project, but it might break because over time a new R version has been implemented. So you need complementary tools.
+:::
+
+## 
+
+## Resources
+
+[R-Ladies - Personal R Administration](https://www.youtube.com/watch?v=YNTozV6kxSE) <br> [Introduction to `renv`](https://rstudio.github.io/renv/articles/renv.html) <br> 
+[What they forgot to teach you about R](https://rstats.wtf/) <br> 
+[renv challenges](https://github.com/shannonpileggi/renv-challenges) <br> [Reproducible Environments - Posit](https://solutions.posit.co/envs-pkgs/environments/) <br> [The Turing Way - Reproducible Environments](https://book.the-turing-way.org/reproducible-research/renv.html) <br>
