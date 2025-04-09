@@ -321,3 +321,4 @@ Improving reproducibility:
 [R-Ladies - Personal R Administration](https://www.youtube.com/watch?v=YNTozV6kxSE) <br> [Introduction to `renv`](https://rstudio.github.io/renv/articles/renv.html) <br> 
 [What they forgot to teach you about R](https://rstats.wtf/) <br> 
 [renv challenges](https://github.com/shannonpileggi/renv-challenges) <br> [Reproducible Environments - Posit](https://solutions.posit.co/envs-pkgs/environments/) <br> [The Turing Way - Reproducible Environments](https://book.the-turing-way.org/reproducible-research/renv.html) <br>
+[Rig, the R installation Manager](https://github.com/r-lib/rig?tab=readme-ov-file#id-known-issues) <br>
