@@ -121,7 +121,11 @@ R Projects make your life easier because:
 
 ## How to make an .RProject
 ![](img/Rproj_dropdown.png){width=60%}
-![](img/Rproj_select.png)
+![](img/Rproj_select.png){.fragment}
+
+::: fragment
+*Spoiler alert!* <br>  Check [Code Club calendar](https://docs.google.com/spreadsheets/d/1rOOOE7ghPduwtFftG0DJJf0DXVigAdcmQ0xdEwbKQXo/edit?usp=sharing) for our Git & Github session!
+:::
 
 ## Example : .RProject
 
@@ -145,7 +149,7 @@ Even though an R Project helps organize your analysis into one coherent location
 ... You still need a **structured directory layout** to organize your file inside this project to get the most out of it
 :::
 
-## .RProject is not enough alone
+## Organise your Files!
 
 ::::: columns
 ::: {.column width="50%"}
@@ -166,7 +170,7 @@ Having an R project is a good start, but you still need to organise your files i
 :::::::: columns
 :::::: {.column width="60%"}
 ::: fragment
-Collections of functions, data, and compiled code that extend R’s functionality
+Collections of functions and compiled code that extend R’s functionality
 :::
 
 <br>
@@ -212,49 +216,105 @@ renv stands for "R environment," and it's a package designed to keep your R proj
 Why does this matter? Because packages in R are constantly being updated, and sometimes updates change the way packages behave. Without controlling package versions, your code might run perfectly today but fail or give different results a few months down the line.
 :::
 
-## Using renv: Step-by-Step
+## Using renv: you, starting the project
 
-**Step 1: Initialize & Snapshot (`renv::init()` and `renv::snapshot()`)**
-
--   Create an isolated library for your project
--   Save exact versions of packages you're using into a file `renv.lock`
+-   `renv::init()`: create an isolated library for your project
+-   `renv::snapshot()`: save exact versions of packages you're using into a `renv.lock` file 
 <br>
 
-**Step 2: The renv.lock file**
+::: fragment
+This lockfile acts like a recipe that describes the environment your project needs to run.
+:::
 
--   Lists exact package versions and sources
--   Ensures integrity and authenticity of packages
+:::{.notes}
+When you're working on a new project and want to make it reproducible, here's what you do:
+- `renv::init()` — this creates a private library just for your project. That means any packages you install won’t interfere with other projects.
+- As you install packages and write code, use `renv::snapshot()` to save the current state of your project's library. This creates a file called `renv.lock`, which records exactly which packages you’re using, their versions, and where they came from.
+:::
 
-<br> **Step 3: Restore (`renv::restore()`)**
+## Using renv: someone else, with your project
 
--   Recreates your exact environment on any computer by 
-    installing packages from the `renv.lock` file
-<br>
+- `renv::restore()`
+
+::: fragment
+*Yes, that's it.*
+:::
+
 
 ::: notes
+Let’s say someone else wants to run your code. They don’t need to guess what packages or versions you used — they just run:
+
+The command renv::restore() reads your `renv.lock` file and automatically installs all the required packages in the correct versions. It recreates the same package setup you used.
+
 renv greatly simplifies reproducing the exact environment and package setup used in your project
 :::
 
 ## Limitations
 
+:::: columns
+::: {.column width="50%"}
 `renv` doesn't handle:
 
 -   R itself (versions)
 -   System dependencies (compilers, external libraries)
 
+:::
+
+::: {.column width="50%"}
 ![](https://github.com/shannonpileggi/renv-challenges/raw/main/img/renv_choice_1.jpg)
+:::
+
+::::
 
 ::: notes
 However, no single tool handles everything. One of the limitations most R users forget abut renv is that renv does not handle R versions. So you could have a perfectly documented, saved project, but it might break because over time a new R version has been implemented. So you need complementary tools.
 :::
 
-## 
 
-## Dealing with different R versions
+## Managing R Versions
 
-rig
+Sometimes it's not just about the packages — the version of R itself can matter too. 
+<br><br>
+::: fragment
+That's where **Rig** comes in.
+:::
 
-Docker
+:::{.notes}
+Small changes between versions of R can affect how packages behave or whether certain functions are even available.
+:::
+
+## What is Rig?
+
+Rig is a lightweight tool that helps you manage multiple versions of R on the same machine.
+
+- It works on **Windows, macOS, and Linux**.
+- You can easily install new R versions.
+- You can switch between R versions with a simple command.
+
+## Why Use Rig?
+
+- Makes it easy to test code across R versions.
+- Simplifies keeping old projects running on older setups.
+- Plays well with tools like `renv`, completing the reproducibility setup.
+<br><br>
+
+::: fragment
+🧩 renv manages your packages <br>
+🛠️ Rig manages your R versions
+:::
+
+:::{.notes}
+rig supports long-term reproducibility. If someone opens your project years later, they can install the same version of R and restore your setup.
+:::
+
+## Wrapping Up
+
+Improving reproducibility:
+
+- Organize projects clearly
+- Manage dependencies carefully (`renv`)
+- Use version management (Rig)
+- Document everything!
 
 ## Resources
 
