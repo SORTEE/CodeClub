@@ -275,6 +275,7 @@ However, no single tool handles everything. One of the limitations most R users 
 
 Sometimes it's not just about the packages — the version of R itself can matter too. 
 <br><br>
+
 ::: fragment
 That's where **Rig** comes in.
 :::
