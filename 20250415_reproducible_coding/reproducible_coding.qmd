@@ -13,6 +13,22 @@ format:
 ---
 
 ## Welcome
+:::: columns
+::: {.column width="50%"}
+![](img/sortee_codeclub-white.png)
+
+:::
+
+::: {.column width="50%"}
+
+::: fragment
+- Every third Tuesday of the Month
+- Topics and schedule here: [SORTEE Code Club Schedule](https://docs.google.com/spreadsheets/d/1rOOOE7ghPduwtFftG0DJJf0DXVigAdcmQ0xdEwbKQXo/edit?gid=1671163307#gid=1671163307)
+- Do you have a topic in mind? [Write us!](https://forms.gle/eZy81dUymiZNJetu8)
+:::
+
+:::
+::::
 
 ::: notes
 Today we'll chat about reproducible coding environments in R. We'll cover what reproducibility means, why it matters, and look at practical ways to make your research and data analysis easier to repeat and share.
@@ -275,7 +291,6 @@ However, no single tool handles everything. One of the limitations most R users 
 
 Sometimes it's not just about the packages — the version of R itself can matter too. 
 <br><br>
-
 ::: fragment
 That's where **Rig** comes in.
 :::
