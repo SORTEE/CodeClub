@@ -1,0 +1,64 @@
+project:
+  type: manuscript
+  output-dir: output
+  render:
+    - index.qmd
+    
+manuscript:
+  article: index.qmd
+
+
+# https://quarto.org/docs/journals/authors.html#author-metadata
+
+author:
+  - name: #https://quarto.org/docs/journals/authors.html#names
+      given: Anna
+      dropping-particle: von
+      family: Stein
+    orcid: 0000-0002-1234-5678
+    email: anna.vonstein@example.edu
+    # https://quarto.org/docs/journals/authors.html#affiliations-schema
+    affiliation:
+      name: Institute for Data Science
+      department: Department of Computational Biology
+      city: Heidelberg
+      country: Germany
+    # https://quarto.org/docs/journals/authors.html#roles
+    roles:
+      - conceptualization: lead
+      - methodology: lead
+      - writing-original-draft: lead
+    corresponding: true
+
+  - name:
+      given: Marcus
+      family: Li
+    orcid: 0000-0003-9876-5432
+    email: marcus.li@example.edu
+    affiliation:
+      name: University of Zurich
+      department: Department of Statistics
+      city: Zurich
+      country: Switzerland
+    roles:
+      - software: supporting
+      - data-curation: lead
+      - writing-review-editing: supporting
+
+
+format:
+  html:
+    comments:
+      hypothesis: true
+  docx: default
+  jats: default
+
+  # (other formats)
+  # pdf: default
+
+execute:
+  freeze: true #prevents re-execution of code chunks unless the source code changes, improving reproducibility and rendering speed.
+
+editor: source #or visual
+
+bibliography: references.bib

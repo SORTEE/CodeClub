@@ -1,0 +1,16 @@
+---
+title: From Notebook to Paper
+abstract: 
+thanks: | 
+  You can write acknowledgements here.
+keywords: [Quarto, Code Club]
+bibliography: references.bib
+---
+
+## Section
+
+This is a simple placeholder for the manuscript's main document [@knuth84].
+
+```{r}
+1 + 1
+```

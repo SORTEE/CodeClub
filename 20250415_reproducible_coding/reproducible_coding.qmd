@@ -3,7 +3,7 @@ title: "Introduction to Reproducible Coding Environment"
 format:
   revealjs:
     incremental: true
-    logo: "/img/main_green.png"
+    logo: img/main_green.png
     theme: sortee_style.scss
     height: 900
     width: 1600

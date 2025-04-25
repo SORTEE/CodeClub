@@ -59,12 +59,13 @@ penguinsData = na.omit(test)
 c <- 0.1 # constant
 c2 <- 1 # constant2
 
-#penguinsData$Date.Egg <- lubridate::yday(as.Date(penguinsData$"Date Egg"))
-#penguinsData$Date.Egg <- lubridate::as.Date(penguinsData$"Date Egg")
-
+penguinsData$Date.Egg <- lubridate::yday(as.Date(penguinsData$"Date Egg"))
+penguinsData$Date.Egg <- as.Date(penguinsData$"Date Egg")
 
 penguinsData$W = ifelse(penguinsData$"Clutch Completion"  == "Yes",
-                        1.5 + scale(penguinsData$Date.Egg, center = T, scale = F) * c + as.numeric(as.factor(penguinsData$flipperCategory))*c2, + rnorm(nrow(penguinsData), 0, 0.25), 
+                        1.5 + scale(lubridate::yday(penguinsData$Date.Egg), center = TRUE, scale = FALSE) * c +
+                          as.numeric(as.factor(penguinsData$flipperCategory)) * c2 +
+                          rnorm(nrow(penguinsData), 0, 0.25),
                         0)
 
 mod1<-lm(W~flipperCategory+`Date Egg`+`Clutch Completion`, data = penguinsData) 
