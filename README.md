@@ -12,8 +12,7 @@ We meet online **every third Tuesday of the month**. We host two types of sessio
 - **Training Sessions**: Learn new coding skills, packages, models, and tools that support open science.
 - **Hacky Hours**: Casual peer-to-peer sessions for code review, troubleshooting, and sharing tips and tricks.
 
-🗓️ [Check the full Code Club schedule](https://docs.google.com/document/d/1b4q0a8j8Q0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0/edit)
-
+🗓️ [Check the full Code Club schedule](https://docs.google.com/spreadsheets/d/1rOOOE7ghPduwtFftG0DJJf0DXVigAdcmQ0xdEwbKQXo/edit?gid=1671163307#gid=1671163307)
 
 ## Who can participate?
 
@@ -29,12 +28,12 @@ If you can’t make it live, check out our [meeting debriefs on the SORTEE blog]
 
 - [Implementing Code Review in the Scientific Workflow](https://www.sortee.org/resources/implementing-code-review): What, why, and how of code review in science.
 - [SORTEE Code Standard (under development)](https://github.com/SORTEE/CodeStandard): A working example of Open, Reliable, Transparent (ORT) practices.
-- [Library of Code Mistakes](https://www.sortee.org/resources/library-of-code-mistakes): Common coding errors and what we learn from them.
-- [Find a Code Reviewer](https://www.sortee.org/resources/find-a-code-reviewer): Request or offer reviews at any stage of your project.
+- [Library of Code Mistakes](https://docs.google.com/presentation/d/12QN3WUc5v1Df7OArEox2U7l_N_qnHHuwzjCYiI4idC8/edit#slide=id.g2c3d428e31a_0_53): Common coding errors and what we learn from them.
+- [Find a Code Reviewer](https://docs.google.com/spreadsheets/d/13akCaEoyy-9XBOqEqaXXNRd9EXC4W7cVSjjisOdtJhk/edit?usp=sharing): Request or offer reviews at any stage of your project.
 
 ## Contributing
 
 We welcome all forms of contribution! You can suggest a topic, share your code, provide feedback, or help others in the community.  
 Your involvement helps us grow and improve.
 
-Please refer to our [Code of Conduct](https://www.sortee.org/documents/code-of-conduct) for participation guidelines.
+Please refer to our [Code of Conduct](https://www.sortee.org/codeofconduct/) for participation guidelines.
