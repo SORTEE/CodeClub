@@ -11,7 +11,7 @@ manuscript:
 # https://quarto.org/docs/journals/authors.html#author-metadata
 
 author:
-  - name: #https://quarto.org/docs/journals/authors.html#names
+  - name: #Check how to add names correctly here: https://quarto.org/docs/journals/authors.html#names
       given: Anna
       dropping-particle: von
       family: Stein
