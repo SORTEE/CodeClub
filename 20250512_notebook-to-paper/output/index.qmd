@@ -1,6 +1,6 @@
 ---
 title: From Penguins to Papers  
-csl: acta-ornithologica.csl #If you want a specific citation style (e.g., APA), download a .csl file from Zotero Style Repository
+csl: apa.csl #If you want a specific citation style (e.g., APA), download a .csl file from Zotero Style Repository
 thanks: | 
   You can write acknowledgements here.
 keywords: [Quarto, Code Club]

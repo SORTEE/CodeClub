@@ -1,6 +1,6 @@
 ---
 title: From Penguins to Papers  
-csl: acta-ornithologica.csl #If you want a specific citation style (e.g., APA), download a .csl file from Zotero Style Repository
+csl: apa.csl #If you want a specific citation style (e.g., APA), download a .csl file from Zotero Style Repository
 thanks: | 
   You can write acknowledgements here.
 keywords: [Quarto, Code Club]
@@ -13,7 +13,7 @@ Reproducibility is a cornerstone of open science. In this demonstration, we expl
 
 # Introduction
 
-The *palmerpenguins* (@palmerpenguins2020) dataset has become a beloved alternative to the canonical iris dataset, offering richer ecological features and more realistic data imperfections. Bill length and depth are key morphological features in penguins, thought to relate to feeding ecology and sexual dimorphism. However, our true aim is not to contribute to penguin biology—but to demonstrate how to structure a computational notebook as a manuscript using [Quarto](https://quarto.org) (@Geert2025Reproducible).
+The *palmerpenguins* @palmerpenguins2020 dataset has become a beloved alternative to the canonical iris dataset, offering richer ecological features and more realistic data imperfections. Bill length and depth are key morphological features in penguins, thought to relate to feeding ecology and sexual dimorphism. However, our true aim is not to contribute to penguin biology—but to demonstrate how to structure a computational notebook as a manuscript using [Quarto](https://quarto.org) @Geert2025Reproducible.
 
 ```{r penguin-art, fig.cap='Illustration of Adélie, Chinstrap, and Gentoo penguins. Artwork by Allison Horst.'}
 knitr::include_graphics("figures/penguins.png")
