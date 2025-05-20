@@ -1,6 +1,5 @@
 ---
 title: "README"
-output: html_document
 ---
 
 # From Notebook to Paper
