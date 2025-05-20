@@ -182,12 +182,7 @@
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-     <script async="" src="https://hypothes.is/embed.js"></script>
-<script>
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    document.body.classList.add('hypothesis-enabled');
-  });
-</script>  
+     
       <meta name="citation_title" content="From Penguins to Papers">
 <meta name="citation_keywords" content="Quarto,Code Club">
 <meta name="citation_author" content="Anna von Stein">
@@ -284,7 +279,7 @@
 </section>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The <em>palmerpenguins</em> (<span class="citation" data-cites="palmerpenguins2020">Horst, Hill, &amp; Gorman (<a href="#ref-palmerpenguins2020" role="doc-biblioref">2020</a>)</span>) dataset has become a beloved alternative to the canonical iris dataset, offering richer ecological features and more realistic data imperfections. Bill length and depth are key morphological features in penguins, thought to relate to feeding ecology and sexual dimorphism. However, our true aim is not to contribute to penguin biology—but to demonstrate how to structure a computational notebook as a manuscript using <a href="https://quarto.org">Quarto</a> (<span class="citation" data-cites="Geert2025Reproducible">Geert &amp; Koßmann (<a href="#ref-Geert2025Reproducible" role="doc-biblioref">2025</a>)</span>).</p>
+<p>The <em>palmerpenguins</em> <span class="citation" data-cites="palmerpenguins2020">Horst, Hill, &amp; Gorman (<a href="#ref-palmerpenguins2020" role="doc-biblioref">2020</a>)</span> dataset has become a beloved alternative to the canonical iris dataset, offering richer ecological features and more realistic data imperfections. Bill length and depth are key morphological features in penguins, thought to relate to feeding ecology and sexual dimorphism. However, our true aim is not to contribute to penguin biology—but to demonstrate how to structure a computational notebook as a manuscript using <a href="https://quarto.org">Quarto</a> <span class="citation" data-cites="Geert2025Reproducible">Geert &amp; Koßmann (<a href="#ref-Geert2025Reproducible" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"figures/penguins.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -307,7 +302,7 @@
 <h1>Results</h1>
 <p>The model suggests that bill length increases with bill depth. Additionally, both species and sex have notable effects on bill size, with males generally exhibiting longer bills.</p>
 <p>The figure below shows the estimated coefficients from the model:</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="cell-fig-model-coeffs" class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr) </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -355,14 +350,19 @@ dbl (4): estimate, std.error, statistic, p.value
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> estimate <span class="sc">-</span> std.error <span class="sc">*</span> <span class="fl">1.96</span>,</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">ymax =</span> estimate <span class="sc">+</span> std.error <span class="sc">*</span> <span class="fl">1.96</span>),</span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Model Coefficients"</span>,</span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Term"</span>, <span class="at">y =</span> <span class="st">"Estimate"</span>) <span class="sc">+</span></span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="">
-<figure class="figure">
-<p class=""><a href="index_files/figure-html/unnamed-chunk-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></a></p>
+<div id="fig-model-coeffs" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-model-coeffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="index_files/figure-html/fig-model-coeffs-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;1: Estimated coefficients from the model showing effects of bill depth, species, and sex on bill length."><img src="index_files/figure-html/fig-model-coeffs-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-model-coeffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Estimated coefficients from the model showing effects of bill depth, species, and sex on bill length.
+</figcaption>
 </figure>
 </div>
 </div>

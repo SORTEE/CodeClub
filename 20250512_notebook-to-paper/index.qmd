@@ -35,6 +35,10 @@ The model suggests that bill length increases with bill depth. Additionally, bot
 The figure below shows the estimated coefficients from the model:
 
 ```{r}
+#| label: fig-model-coeffs
+#| fig-cap: "Estimated coefficients from the model showing effects of bill depth, species, and sex on bill length."
+#| fig-align: center
+
 library(readr) 
 library(ggplot2)
 

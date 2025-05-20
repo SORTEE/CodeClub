@@ -59,12 +59,6 @@ div.csl-indent {
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<script async="" src="https://hypothes.is/embed.js"></script>
-<script>
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    document.body.classList.add('hypothesis-enabled');
-  });
-</script>
 
 
 <meta name="citation_title" content="From Penguins to Papers">
@@ -161,7 +155,7 @@ div.csl-indent {
 </section>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The <em>palmerpenguins</em> (<span class="citation" data-cites="palmerpenguins2020">Horst, Hill, &amp; Gorman (<a href="#ref-palmerpenguins2020" role="doc-biblioref">2020</a>)</span>) dataset has become a beloved alternative to the canonical iris dataset, offering richer ecological features and more realistic data imperfections. Bill length and depth are key morphological features in penguins, thought to relate to feeding ecology and sexual dimorphism. However, our true aim is not to contribute to penguin biology—but to demonstrate how to structure a computational notebook as a manuscript using <a href="https://quarto.org">Quarto</a> (<span class="citation" data-cites="Geert2025Reproducible">Geert &amp; Koßmann (<a href="#ref-Geert2025Reproducible" role="doc-biblioref">2025</a>)</span>).</p>
+<p>The <em>palmerpenguins</em> <span class="citation" data-cites="palmerpenguins2020">Horst, Hill, &amp; Gorman (<a href="#ref-palmerpenguins2020" role="doc-biblioref">2020</a>)</span> dataset has become a beloved alternative to the canonical iris dataset, offering richer ecological features and more realistic data imperfections. Bill length and depth are key morphological features in penguins, thought to relate to feeding ecology and sexual dimorphism. However, our true aim is not to contribute to penguin biology—but to demonstrate how to structure a computational notebook as a manuscript using <a href="https://quarto.org">Quarto</a> <span class="citation" data-cites="Geert2025Reproducible">Geert &amp; Koßmann (<a href="#ref-Geert2025Reproducible" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -183,11 +177,16 @@ div.csl-indent {
 <h1>Results</h1>
 <p>The model suggests that bill length increases with bill depth. Additionally, both species and sex have notable effects on bill size, with males generally exhibiting longer bills.</p>
 <p>The figure below shows the estimated coefficients from the model:</p>
-<div class="cell">
+<div id="cell-fig-model-coeffs" class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><a href="index_files/figure-html/unnamed-chunk-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></a></p>
+<div id="fig-model-coeffs" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-model-coeffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-model-coeffs-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;1: Estimated coefficients from the model showing effects of bill depth, species, and sex on bill length."><img src="index_files/figure-html/fig-model-coeffs-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-model-coeffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Estimated coefficients from the model showing effects of bill depth, species, and sex on bill length.
+</figcaption>
 </figure>
 </div>
 </div>
