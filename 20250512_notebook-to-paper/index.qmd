@@ -48,7 +48,7 @@ ggplot(coeffs, aes(x = term, y = estimate)) +
   geom_errorbar(aes(ymin = estimate - std.error * 1.96,
                     ymax = estimate + std.error * 1.96),
                 width = 0.2) +
-  theme_minimal() +
+  theme_bw() +
   labs(title = "Model Coefficients",
        x = "Term", y = "Estimate") +
   coord_flip()
