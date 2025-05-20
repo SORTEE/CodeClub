@@ -47,11 +47,9 @@ author:
 
 
 format:
-  html:
-    comments:
-      hypothesis: true
+  html: default
   docx: default
-  jats: default
+  jats: default #JATS (Journal Article Tag Suite) XML output, typically used in scholarly publishing workflows
 
   # (other formats)
   # pdf: default
