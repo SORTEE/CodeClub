@@ -7,7 +7,6 @@ project:
 manuscript:
   article: index.qmd
 
-
 # https://quarto.org/docs/journals/authors.html#author-metadata
 
 author:

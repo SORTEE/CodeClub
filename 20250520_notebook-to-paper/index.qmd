@@ -1,8 +1,7 @@
 ---
 title: From Penguins to Papers  
 csl: apa.csl #If you want a specific citation style (e.g., APA), download a .csl file from Zotero Style Repository
-thanks: | 
-  You can write acknowledgements here.
+thanks: Thanks to SORTEE Members!
 keywords: [Quarto, Code Club]
 bibliography: references.bib
 ---
