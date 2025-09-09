@@ -1,0 +1,349 @@
+---
+title: "Version Control: a researcher's guide to Git and GitHub"
+format: 
+  revealjs:
+    incremental: true
+    chalkboard: true
+    logo: img/main_green.png
+    theme: sortee_style.scss
+    height: 900
+    width: 1600
+    transition: fade
+    code-line-numbers: true
+---
+
+## Welcome
+:::: columns
+::: {.column width="50%"}
+![](img/sortee_codeclub-white.png)
+
+:::
+
+::: {.column width="50%"}
+
+::: fragment
+- Every third Tuesday of the Month
+- Topics and schedule here: [SORTEE Code Club Schedule](https://docs.google.com/spreadsheets/d/1rOOOE7ghPduwtFftG0DJJf0DXVigAdcmQ0xdEwbKQXo/edit?gid=1671163307#gid=1671163307)
+- Do you have a topic in mind? [Write us!](https://forms.gle/eZy81dUymiZNJetu8)
+:::
+
+:::
+::::
+
+
+## About Code Club
+
+:::: columns
+::: {.column width="50%"}
+![](img/sortee_codeclub-white.png)
+:::
+
+::: {.column width="50%"}
+SORTEE Code Club is an online meeting where **people come together to learn, share, and collaborate on coding-related topics** in an informal and supportive environment
+:::
+::::
+
+## SORTEE Resources
+
+Do you know about **SORTEE Resources**? <br><br>
+
+::::: columns
+::: {.column width="50%"}
+[SORTEE Library of Code Mistakes](https://docs.google.com/presentation/d/12QN3WUc5v1Df7OArEox2U7l_N_qnHHuwzjCYiI4idC8/edit#slide=id.g2c3d428e31a_0_53) <br> <br> [Find an ORTEE Reviewer](https://docs.google.com/spreadsheets/d/1eHdU8o0psUj6Y4dPxqA-uW8Fc8SQVwzY1BnEbXM5k54/edit?gid=0#gid=0) <br> <br> [GitHub SORTEE](https://github.com/SORTEE)
+:::
+
+::: {.column width="50%"}
+![](img/main_green.png)
+:::
+:::::
+
+## Today's Agenda
+
+**Goal for the next 60 minutes:**
+
+Understand how version control can make your research more robust, reproducible, and less stressful.
+
+::: {.notes}
+Today, we're going to tackle a topic that can genuinely change the way you manage your research projects: version control with Git and GitHub.
+
+My goal for the next hour isn't to make you an expert, but to show you what version control is, why it's so useful for researchers, and how you can start using it for your own solo projects *today*. We'll demystify the jargon and focus on a practical workflow that you can apply immediately.
+:::
+
+## Why Bother? The Familiar Problem
+
+:::: {.columns}
+::: {.column width="40%"}
+![The anatomy of a file name without version control](img/final.jpg)
+:::
+
+::: {.column width="60%"}
+How do you track changes over time?
+
+Which one is the *actual* final version?
+:::
+::::
+
+::: {.notes}
+Let's start with a scene I'm sure we're all painfully familiar with. You have a folder for a paper or an analysis, and it's filled with files named like this. You have your script, then `script_v2`, `script_v2_final`, `script_v2_final_FOR_REAL_THIS_TIME`.
+
+It's chaotic, it's stressful, and it makes it nearly impossible to confidently know which version of your code produced which version of a figure or result. This is what we call 'manual version control', and it's a recipe for disaster, especially in research where reproducibility is key.
+:::
+
+## What is Version Control?
+
+
+It's like **"Track Changes"** for your entire project folder.
+
+-   Not just for one file, but for your code, manuscripts, figures, and data files.
+-   It creates a complete, browsable history of your project.
+-   You decide when to save a "snapshot" (a **commit**) of your work.
+
+
+::: {.notes}
+So what's the solution? It's a concept called Version Control.
+
+The simplest analogy is that it's like the 'Track Changes' feature in Microsoft Word or Google Docs, but super-powered. Instead of just tracking changes in a single document, it tracks changes across your *entire project folder*.
+
+It lets you save a 'snapshot' of your work at any point in time. We call this snapshot a 'commit'. This creates a detailed, browsable history of your project, allowing you to see who changed what, and when.
+:::
+
+
+## A Game-Changer for Research
+
+-   **Reproducibility:** Anyone (including "future you") can retrieve the exact version of the code used to generate a result.
+-   **Collaboration:** Simplifies working with others without emailing files back and forth.
+-   **Peace of Mind:** Freely experiment with new ideas. If you mess up, you can always rewind to a version that worked.
+-   **A Clear History:** Understand *why* changes were made over time.
+
+::: {.notes}
+And this is why it's a game-changer for us as researchers.
+
+First, **Reproducibility**. If a reviewer asks you to regenerate a figure from 6 months ago, you can go back to the *exact* state of the project at that time.
+
+Second, **Collaboration**. It provides a structured way to work with co-authors on code without overwriting each other's work.
+
+Third, **Peace of Mind**. This is a big one. You can try a risky new analysis method or completely refactor your code, knowing that if it all goes wrong, you can rewind back to a working version in seconds. No more fear.
+
+Finally, a **Clear History**. Your project's history becomes a story, explaining not just *what* changed, but *why* it changed, through your commit messages.
+:::
+
+## The Big Difference: Git vs. GitHub
+
+::: {.columns}
+::: {.column width="50%"}
+**Git** is the **TOOL**
+
+-   Software on *your* computer.
+-   It does the actual tracking.
+-   It's the engine.
+-   **You can use Git 100% offline without ever needing GitHub.**
+:::
+::: {.column width="50%"}
+**GitHub** is the **PLACE**
+
+-   A website/service to host your Git projects (repositories).
+-   For backup, sharing, and collaboration.
+-   Think of it as Dropbox or Google Drive, but supercharged for code.
+:::
+:::
+
+::: fragment
+You use **Git** locally, and you can optionally **push** your work to **GitHub**.
+:::
+
+::: {.notes}
+Okay, let's clear up the most common point of confusion right away: the difference between Git and GitHub.
+
+**Git is the software**, the tool, the engine that lives on your computer. It does all the hard work of tracking changes. You can download it, install it, and use it for all your projects without ever needing an internet connection or an account on any website.
+
+**GitHub is a website**, a service, a place to store your Git-tracked projects. It's a cloud backup, a place to share your work, and a platform for collaboration.
+
+So, you use Git locally on your machine to manage your project's history. Then, if you want to, you can 'push' a copy of that project and its history to GitHub for safekeeping or to share with others.
+:::
+
+
+## Core Workflow
+
+![](img/git-flow-1.png)
+
+1.  **Working Directory:** Your normal files and folders.
+2.  **Staging Area:** The waiting room. You add files here (`git add`) to tell Git, "include this changes"
+3.  **Repository:** The permanent history. You save the changes (`git commit`) from the staging area into your project's history.
+
+## Bigger picture? Adding a Remote
+
+![](img/git-flow-2.png)
+
+-   **Remote:** A version of your repository hosted on a server (like GitHub).
+-   **`git pull`**: Fetches changes *from* the Remote Repo *to* your Local Repo (essential for collaboration).
+-   **`git push`**: Sends your committed changes *from* your Local Repo *to* the Remote Repo.
+
+
+::: {.notes}
+So, that local cycle—edit, add, commit—is what you'll do over and over. But what about GitHub?
+
+That's where the **Remote** comes in. A remote is just a copy of your repository that lives on a server.
+
+After you've made some commits to your local repository, you use the `git push` command to send those new commits up to the remote. This is how you back up your work and share it.
+
+If you're collaborating, or if you made changes on another computer, you'd use `git pull` to fetch the latest changes from the remote repository back down to your local machine. This ensures you're always up to date.
+:::
+
+# The Local Scientist (Just Git workflow)
+
+**Commands and the preferred order:**
+
+1.  `git init`: Turn a folder into a Git repository.
+2.  `git status`: Check the state of our three areas.
+3.  `git add <filename>`: Move a file to the Staging Area.
+4.  `git commit -m "Your message"`: Save the snapshot to the Repository.
+5.  `git log`: View the project's history.
+
+## Branching
+
+![](img/git-branch-1.png){#id-branch}
+
+::: {.notes}
+A branch is essentially a parallel timeline for your project. By default, you work on a branch called 'main'. But you can create a new branch to work on a new feature or experiment.
+
+This is incredibly powerful. It means you can try out a whole new statistical method on a new branch, and your 'main' branch remains clean and stable. If the experiment works, you can 'merge' your changes back. If it doesn't, you can just delete the branch, and no harm is done. 
+:::
+
+## Branching: workflow {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](img/git-branch-2.png){#id-branch}
+:::
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="40%"}
+1. Create a branch: `git branch statistical-model`
+2. Commit changes: `git add` and `git commit`
+3. Review your changes `git checkout main` and `git diff`
+4. Merge
+
+:::
+
+::::
+
+::: {.notes}
+`git checkout main`: Switch back to your `main` branch
+  - `git diff my-new-analysis`: See all the changes you made on the branch compared to `main`
+:::
+
+
+## Branching Github {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](img/git-branch-2.png){#id-branch}
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="40%"}
+1. Create a branch
+2. Commit changes
+3. Open **Pull Request** -  Review Pull Request
+4. Merge
+
+:::
+
+::::
+
+## Writing a Good Commit Message
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](img/git-commit.png)
+:::
+
+::: {.column width="50%"}
+A commit message is a note to your future self and collaborators.<br>
+
+It should contain a clear summary 
+**Why it matters:** `git log` becomes a readable story of your project's evolution.
+:::
+
+::::
+
+- **Bad:** `git commit -m "stuff"`
+- **Better:** `git commit -m "Fix bug in statistical calculation"`
+
+::: {.notes}
+When we make that commit, we have to attach a message. This is critical. A commit message is a short, descriptive note explaining *why* you made the change.
+
+A good practice is to write it in the imperative mood, as if you're giving a command. For example, "Fix bug..." or "Add script...". This creates a consistent and readable history.
+
+This is not just for collaborators; it's for 'future you'. Six months from now, a good commit message will be the difference between understanding your project's history and being completely lost.
+:::
+
+## Oops, I Made a Mistake!
+
+What if you *staged* the wrong file or made a typo in your last commit? **Git is forgiving!**
+
+-   **To un-stage a file:**
+    -   You used `git add bad_file.R` but didn't mean to.
+    -   Use `git reset HEAD bad_file.R` to move it back to your Working Directory. `git status` will guide you!
+
+-   **To fix your last commit message:**
+    -   Made a typo? `git commit --amend -m "A corrected message"`
+    -   Forgot a file? `git add forgotten_file.R` then `git commit --amend`.
+
+This is a safe way to fix *local* mistakes before you push them to GitHub.
+
+::: {.notes}
+Creating a project is like hiking in a forest. Sometimes you take a wrong turn and find yourself lost.
+One of the biggest fears for beginners is making a mistake. The good news is that Git is very forgiving, especially for mistakes you've made locally that you haven't shared yet.
+
+Let's say you accidentally `git add` a file you didn't mean to. `git status` itself will tell you how to un-stage it, usually with the `git reset` command.
+
+Or maybe you made your commit but immediately realized you had a typo in the message, or you forgot to include one file. You can easily fix this with `git commit --amend`. This command essentially re-does the previous commit, but with your new changes. It's a very safe and common way to keep your local history clean.
+:::
+
+## `.gitignore`: What to Leave Out
+
+You don't want to track everything!
+
+-   A plain text file named `.gitignore` tells Git which files or folders to ignore.
+
+**You should ignore:**
+
+-   Large data files (use a data repository instead).
+-   Sensitive information (e.g. patient data, API keys).
+-   Files generated by your code (e.g. plots, intermediate results).
+-   System files (e.g. `.DS_Store`, `Thumbs.db`, `.RData`, `.Renviron`).
+
+::: {.notes}
+This is a critically important topic for researchers. You should NOT put everything in Git. Specifically, you need to tell Git to ignore certain files.
+
+You do this with a special file literally named `.gitignore`. It's just a text file where each line is a file or folder pattern to ignore.
+
+Why? First, Git is not designed for large data files. It will become incredibly slow. Use a dedicated data repository like Zenodo, Dryad, or Figshare for your data. Second, you must NEVER commit sensitive information like patient data. It will be in the project's history forever. Third, you don't need to track files that your code generates, like plots. You should track the code that *makes* the plot, not the plot itself. This keeps your repository lean and focused.
+:::
+
+## Open Science Bonus: Get a DOI!
+
+Services like [Zenodo](https://zenodo.org/) can link to your GitHub repository.
+
+1.  You do your research and `git push` to GitHub.
+2.  You "release" a version on GitHub.
+3.  Zenodo archives that version and gives you a **citable DOI**.
+
+This makes your software and analysis a first-class, citable research output!
+
+## Where to Go From Here?
+
+-   [Software Carpentry - Version Control with Git](https://swcarpentry.github.io/git-novice/)
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+-   [GitHub's Resources](https://docs.github.com/en)
+-   [GitHub's Cheat Sheet (PDF)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
+
