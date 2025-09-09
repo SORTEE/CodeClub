@@ -189,7 +189,7 @@ After you've made some commits to your local repository, you use the `git push` 
 If you're collaborating, or if you made changes on another computer, you'd use `git pull` to fetch the latest changes from the remote repository back down to your local machine. This ensures you're always up to date.
 :::
 
-# The Local Scientist (Just Git workflow)
+## The local (Git) workflow
 
 **Commands and the preferred order:**
 
