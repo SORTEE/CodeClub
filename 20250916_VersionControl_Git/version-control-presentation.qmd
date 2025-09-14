@@ -161,22 +161,41 @@ Okay, let's clear up the most common point of confusion right away: the differen
 So, you use Git locally on your machine to manage your project's history. Then, if you want to, you can 'push' a copy of that project and its history to GitHub for safekeeping or to share with others.
 :::
 
+## GitHub is not the only Place!
+
+Popular Alternatives:
+
+- **GitLab**: Very popular in academia and enterprise. Powerful built-in features for the entire software lifecycle
+- **Bitbucket**: Made by Atlassian, integrates tightly with tools like Jira
+- **Self-Hosted**: Your university or research institute might host its own GitLab or Gitea server for better data privacy and control.
+
+::: {.notes}
+It's important to remember that while we're using GitHub today because it's the most popular and has great community features, it is not the only option.
+
+There are other major platforms like GitLab and Bitbucket, which offer very similar features.
+
+Crucially for researchers, your own university or institute might have its own private Git server, often running GitLab. This can be a huge advantage for projects with data privacy concerns.
+
+The most important thing to remember is that the local commands you're learning today will work no matter which remote service you're using. You are learning the skill of Git, not just how to use one website
+:::
+
+
 
 ## Core Workflow
 
 ![](img/git-flow-1.png)
 
-1.  **Working Directory:** Your normal files and folders.
+1.  **Working Directory:** Your normal files and folders
 2.  **Staging Area:** The waiting room. You add files here (`git add`) to tell Git, "include this changes"
-3.  **Repository:** The permanent history. You save the changes (`git commit`) from the staging area into your project's history.
+3.  **Repository:** The permanent history. You save the changes (`git commit`) from the staging area into your project's history
 
 ## Bigger picture? Adding a Remote
 
 ![](img/git-flow-2.png)
 
--   **Remote:** A version of your repository hosted on a server (like GitHub).
--   **`git pull`**: Fetches changes *from* the Remote Repo *to* your Local Repo (essential for collaboration).
--   **`git push`**: Sends your committed changes *from* your Local Repo *to* the Remote Repo.
+-   **Remote:** A version of your repository hosted on a server (like GitHub)
+-   **`git pull`**: Fetches changes *from* the Remote Repo *to* your Local Repo (essential for collaboration)
+-   **`git push`**: Sends your committed changes *from* your Local Repo *to* the Remote Repo
 
 
 ::: {.notes}
@@ -221,9 +240,9 @@ This is incredibly powerful. It means you can try out a whole new statistical me
 :::
 
 ::: {.column width="40%"}
-1. Create a branch: `git branch statistical-model`
-2. Commit changes: `git add` and `git commit`
-3. Review your changes `git checkout main` and `git diff`
+1. Create a branch:  <br> `git branch statistical-model`
+2. Commit changes:  <br>`git add` and `git commit`
+3. Review your changes  <br>`git checkout main` and `git diff`
 4. Merge
 
 :::
@@ -269,7 +288,7 @@ This is incredibly powerful. It means you can try out a whole new statistical me
 ::: {.column width="50%"}
 A commit message is a note to your future self and collaborators.<br>
 
-It should contain a clear summary 
+ <br> <br>
 **Why it matters:** `git log` becomes a readable story of your project's evolution.
 :::
 
@@ -298,7 +317,9 @@ What if you *staged* the wrong file or made a typo in your last commit? **Git is
     -   Made a typo? `git commit --amend -m "A corrected message"`
     -   Forgot a file? `git add forgotten_file.R` then `git commit --amend`.
 
-This is a safe way to fix *local* mistakes before you push them to GitHub.
+::: fragment
+*This is a safe way to fix local mistakes before you push them to GitHub.*
+:::
 
 ::: {.notes}
 Creating a project is like hiking in a forest. Sometimes you take a wrong turn and find yourself lost.

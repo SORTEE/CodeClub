@@ -305,22 +305,47 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="github-is-not-the-only-place" class="slide level2">
+<h2>GitHub is not the only Place!</h2>
+<p>Popular Alternatives:</p>
+<ul>
+<li class="fragment"><strong>GitLab</strong>: Very popular in academia and enterprise. Powerful built-in features for the entire software lifecycle</li>
+<li class="fragment"><strong>Bitbucket</strong>: Made by Atlassian, integrates tightly with tools like Jira</li>
+<li class="fragment"><strong>Self-Hosted</strong>: Your university or research institute might host its own GitLab or Gitea server for better data privacy and control.</li>
+</ul>
+<aside class="notes">
+<p>It’s important to remember that while we’re using GitHub today because it’s the most popular and has great community features, it is not the only option.</p>
+<p>There are other major platforms like GitLab and Bitbucket, which offer very similar features.</p>
+<p>Crucially for researchers, your own university or institute might have its own private Git server, often running GitLab. This can be a huge advantage for projects with data privacy concerns.</p>
+<p>The most important thing to remember is that the local commands you’re learning today will work no matter which remote service you’re using. You are learning the skill of Git, not just how to use one website</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="core-workflow" class="slide level2">
 <h2>Core Workflow</h2>
 
 <img data-src="img/git-flow-1.png" class="r-stretch"><ol type="1">
-<li class="fragment"><strong>Working Directory:</strong> Your normal files and folders.</li>
+<li class="fragment"><strong>Working Directory:</strong> Your normal files and folders</li>
 <li class="fragment"><strong>Staging Area:</strong> The waiting room. You add files here (<code>git add</code>) to tell Git, “include this changes”</li>
-<li class="fragment"><strong>Repository:</strong> The permanent history. You save the changes (<code>git commit</code>) from the staging area into your project’s history.</li>
+<li class="fragment"><strong>Repository:</strong> The permanent history. You save the changes (<code>git commit</code>) from the staging area into your project’s history</li>
 </ol>
 </section>
 <section id="bigger-picture-adding-a-remote" class="slide level2">
 <h2>Bigger picture? Adding a Remote</h2>
 
 <img data-src="img/git-flow-2.png" class="r-stretch"><ul>
-<li class="fragment"><strong>Remote:</strong> A version of your repository hosted on a server (like GitHub).</li>
-<li class="fragment"><strong><code>git pull</code></strong>: Fetches changes <em>from</em> the Remote Repo <em>to</em> your Local Repo (essential for collaboration).</li>
-<li class="fragment"><strong><code>git push</code></strong>: Sends your committed changes <em>from</em> your Local Repo <em>to</em> the Remote Repo.</li>
+<li class="fragment"><strong>Remote:</strong> A version of your repository hosted on a server (like GitHub)</li>
+<li class="fragment"><strong><code>git pull</code></strong>: Fetches changes <em>from</em> the Remote Repo <em>to</em> your Local Repo (essential for collaboration)</li>
+<li class="fragment"><strong><code>git push</code></strong>: Sends your committed changes <em>from</em> your Local Repo <em>to</em> the Remote Repo</li>
 </ul>
 <aside class="notes">
 <p>So, that local cycle—edit, add, commit—is what you’ll do over and over. But what about GitHub?</p>
@@ -339,9 +364,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section>
-<section id="the-local-scientist-just-git-workflow" class="title-slide slide level1 center">
-<h1>The Local Scientist (Just Git workflow)</h1>
+<section id="the-local-git-workflow" class="slide level2">
+<h2>The local (Git) workflow</h2>
 <p><strong>Commands and the preferred order:</strong></p>
 <ol type="1">
 <li class="fragment"><code>git init</code>: Turn a folder into a Git repository.</li>
@@ -378,9 +402,9 @@
 
 </div><div class="column" style="width:40%;">
 <ol type="1">
-<li class="fragment">Create a branch: <code>git branch statistical-model</code></li>
-<li class="fragment">Commit changes: <code>git add</code> and <code>git commit</code></li>
-<li class="fragment">Review your changes <code>git checkout main</code> and <code>git diff</code></li>
+<li class="fragment">Create a branch: <br> <code>git branch statistical-model</code></li>
+<li class="fragment">Commit changes: <br><code>git add</code> and <code>git commit</code></li>
+<li class="fragment">Review your changes <br><code>git checkout main</code> and <code>git diff</code></li>
 <li class="fragment">Merge</li>
 </ol>
 </div></div>
@@ -421,7 +445,7 @@
 <p><img data-src="img/git-commit.png"></p>
 </div><div class="column" style="width:50%;">
 <p>A commit message is a note to your future self and collaborators.<br></p>
-<p>It should contain a clear summary <strong>Why it matters:</strong> <code>git log</code> becomes a readable story of your project’s evolution.</p>
+<p><br> <br> <strong>Why it matters:</strong> <code>git log</code> becomes a readable story of your project’s evolution.</p>
 </div></div>
 <ul>
 <li class="fragment"><strong>Bad:</strong> <code>git commit -m "stuff"</code></li>
@@ -458,7 +482,9 @@
 <li class="fragment">Forgot a file? <code>git add forgotten_file.R</code> then <code>git commit --amend</code>.</li>
 </ul></li>
 </ul>
-<p>This is a safe way to fix <em>local</em> mistakes before you push them to GitHub.</p>
+<div class="fragment">
+<p><em>This is a safe way to fix local mistakes before you push them to GitHub.</em></p>
+</div>
 <aside class="notes">
 <p>Creating a project is like hiking in a forest. Sometimes you take a wrong turn and find yourself lost. One of the biggest fears for beginners is making a mistake. The good news is that Git is very forgiving, especially for mistakes you’ve made locally that you haven’t shared yet.</p>
 <p>Let’s say you accidentally <code>git add</code> a file you didn’t mean to. <code>git status</code> itself will tell you how to un-stage it, usually with the <code>git reset</code> command.</p>
@@ -523,7 +549,7 @@
 <li class="fragment"><a href="https://training.github.com/downloads/github-git-cheat-sheet.pdf">GitHub’s Cheat Sheet (PDF)</a></li>
 </ul>
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/main_green.png" class="slide-logo"></p>
