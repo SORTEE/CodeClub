@@ -174,7 +174,7 @@
 <p>Understand how version control can make your research more robust, reproducible, and less stressful.</p>
 <aside class="notes">
 <p>Today, we’re going to tackle a topic that can genuinely change the way you manage your research projects: version control with Git and GitHub.</p>
-<p>My goal for the next hour isn’t to make you an expert, but to show you what version control is, why it’s so useful for researchers, and how you can start using it for your own solo projects <em>today</em>. We’ll demystify the jargon and focus on a practical workflow that you can apply immediately.</p>
+<p>My goal for the next hour is to show you what version control is, why it’s so useful for researchers, and how you can start using it for your own solo projects <em>today</em>. We’ll demystify the jargon and focus on a practical workflow that you can apply immediately.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -202,8 +202,7 @@
 <p>Which one is the <em>actual</em> final version?</p>
 </div></div>
 <aside class="notes">
-<p>Let’s start with a scene I’m sure we’re all painfully familiar with. You have a folder for a paper or an analysis, and it’s filled with files named like this. You have your script, then <code>script_v2</code>, <code>script_v2_final</code>, <code>script_v2_final_FOR_REAL_THIS_TIME</code>.</p>
-<p>It’s chaotic, it’s stressful, and it makes it nearly impossible to confidently know which version of your code produced which version of a figure or result. This is what we call ‘manual version control’, and it’s a recipe for disaster, especially in research where reproducibility is key.</p>
+<p>Let’s start with a scene I’m sure we’re all painfully familiar with. You have a folder for a paper or an analysis, and it’s filled with files named like this. You have your script, then <code>script_v2</code>, <code>script_v2_final</code>, <code>script_v2_final_FOR_REAL_THIS_TIME</code>. It’s chaotic, it’s stressful, and it makes it nearly impossible to know which version of your code produced which version of a figure or result. This is what we call ‘manual version control’, and it’s a recipe for disaster, especially in research where reproducibility is key.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -241,7 +240,7 @@
       }</style></aside>
 </section>
 <section id="a-game-changer-for-research" class="slide level2">
-<h2>A Game-Changer for Research</h2>
+<h2>A game-changer for research</h2>
 <ul>
 <li class="fragment"><strong>Reproducibility:</strong> Anyone (including “future you”) can retrieve the exact version of the code used to generate a result.</li>
 <li class="fragment"><strong>Collaboration:</strong> Simplifies working with others without emailing files back and forth.</li>
@@ -267,7 +266,7 @@
       }</style></aside>
 </section>
 <section id="the-big-difference-git-vs.-github" class="slide level2">
-<h2>The Big Difference: Git vs.&nbsp;GitHub</h2>
+<h2>The big difference: Git vs.&nbsp;GitHub</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Git</strong> is the <strong>TOOL</strong></p>
@@ -439,7 +438,7 @@
 </div></div>
 </section>
 <section id="writing-a-good-commit-message" class="slide level2">
-<h2>Writing a Good Commit Message</h2>
+<h2>Writing a good commit message</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><img data-src="img/git-commit.png"></p>
@@ -468,7 +467,7 @@
       }</style></aside>
 </section>
 <section id="oops-i-made-a-mistake" class="slide level2">
-<h2>Oops, I Made a Mistake!</h2>
+<h2>Oops, I made a mistake!</h2>
 <p>What if you <em>staged</em> the wrong file or made a typo in your last commit? <strong>Git is forgiving!</strong></p>
 <ul>
 <li class="fragment"><strong>To un-stage a file:</strong>
@@ -501,6 +500,41 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="do-you-use-rstudio" class="slide level2">
+<h2>Do you use RStudio?</h2>
+<p>Everything is simpler, then! <br> No need to hard code, you can use the IDE!</p>
+</section>
+<section id="git-status" class="slide level2">
+<h2><code>git status</code></h2>
+<div class="fragment">
+<p><img data-src="img/rstudio-IDE-1.png"></p>
+</div>
+</section>
+<section id="git-add" class="slide level2">
+<h2><code>git add</code></h2>
+
+<img data-src="img/rstudio-IDE-2.png" class="r-stretch"></section>
+<section id="git-diff---staged" class="slide level2">
+<h2><code>git diff --staged</code></h2>
+
+<img data-src="img/rstudio-IDE-3.png" class="r-stretch"><aside class="notes">
+<p>This compares your Staging Area with your last commit. It’s the perfect final check to ensure you’re not committing a mistake</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="git-commit--m-message" class="slide level2">
+<h2><code>git commit -m "Message"</code></h2>
+
+<img data-src="img/rstudio-IDE-4.png" class="r-stretch"></section>
 <section id="gitignore-what-to-leave-out" class="slide level2">
 <h2><code>.gitignore</code>: What to Leave Out</h2>
 <p>You don’t want to track everything!</p>
@@ -545,8 +579,10 @@
 <ul>
 <li class="fragment"><a href="https://swcarpentry.github.io/git-novice/">Software Carpentry - Version Control with Git</a></li>
 <li class="fragment"><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a></li>
+<li class="fragment"><a href="https://git-scm.com/docs">Git Documentation</a></li>
 <li class="fragment"><a href="https://docs.github.com/en">GitHub’s Resources</a></li>
 <li class="fragment"><a href="https://training.github.com/downloads/github-git-cheat-sheet.pdf">GitHub’s Cheat Sheet (PDF)</a></li>
+<li class="fragment"><a href="https://git-scm.com/book/en/v2">Pro Git Book - Free online</a></li>
 </ul>
 
 </section>

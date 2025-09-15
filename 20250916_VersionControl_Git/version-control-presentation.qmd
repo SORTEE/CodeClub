@@ -66,7 +66,7 @@ Understand how version control can make your research more robust, reproducible,
 ::: {.notes}
 Today, we're going to tackle a topic that can genuinely change the way you manage your research projects: version control with Git and GitHub.
 
-My goal for the next hour isn't to make you an expert, but to show you what version control is, why it's so useful for researchers, and how you can start using it for your own solo projects *today*. We'll demystify the jargon and focus on a practical workflow that you can apply immediately.
+My goal for the next hour is to show you what version control is, why it's so useful for researchers, and how you can start using it for your own solo projects *today*. We'll demystify the jargon and focus on a practical workflow that you can apply immediately.
 :::
 
 ## Why Bother? The Familiar Problem
@@ -85,12 +85,10 @@ Which one is the *actual* final version?
 
 ::: {.notes}
 Let's start with a scene I'm sure we're all painfully familiar with. You have a folder for a paper or an analysis, and it's filled with files named like this. You have your script, then `script_v2`, `script_v2_final`, `script_v2_final_FOR_REAL_THIS_TIME`.
-
-It's chaotic, it's stressful, and it makes it nearly impossible to confidently know which version of your code produced which version of a figure or result. This is what we call 'manual version control', and it's a recipe for disaster, especially in research where reproducibility is key.
+It's chaotic, it's stressful, and it makes it nearly impossible to know which version of your code produced which version of a figure or result. This is what we call 'manual version control', and it's a recipe for disaster, especially in research where reproducibility is key.
 :::
 
 ## What is Version Control?
-
 
 It's like **"Track Changes"** for your entire project folder.
 
@@ -108,7 +106,7 @@ It lets you save a 'snapshot' of your work at any point in time. We call this sn
 :::
 
 
-## A Game-Changer for Research
+## A game-changer for research
 
 -   **Reproducibility:** Anyone (including "future you") can retrieve the exact version of the code used to generate a result.
 -   **Collaboration:** Simplifies working with others without emailing files back and forth.
@@ -127,7 +125,7 @@ Third, **Peace of Mind**. This is a big one. You can try a risky new analysis me
 Finally, a **Clear History**. Your project's history becomes a story, explaining not just *what* changed, but *why* it changed, through your commit messages.
 :::
 
-## The Big Difference: Git vs. GitHub
+## The big difference: Git vs. GitHub
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -277,7 +275,7 @@ This is incredibly powerful. It means you can try out a whole new statistical me
 
 ::::
 
-## Writing a Good Commit Message
+## Writing a good commit message
 
 :::: {.columns}
 
@@ -305,7 +303,7 @@ A good practice is to write it in the imperative mood, as if you're giving a com
 This is not just for collaborators; it's for 'future you'. Six months from now, a good commit message will be the difference between understanding your project's history and being completely lost.
 :::
 
-## Oops, I Made a Mistake!
+## Oops, I made a mistake!
 
 What if you *staged* the wrong file or made a typo in your last commit? **Git is forgiving!**
 
@@ -329,6 +327,36 @@ Let's say you accidentally `git add` a file you didn't mean to. `git status` its
 
 Or maybe you made your commit but immediately realized you had a typo in the message, or you forgot to include one file. You can easily fix this with `git commit --amend`. This command essentially re-does the previous commit, but with your new changes. It's a very safe and common way to keep your local history clean.
 :::
+
+## Do you use RStudio?
+
+Everything is simpler, then! <br>
+No need to hard code, you can use the IDE!
+
+## `git status`
+
+::: fragment
+![](img/rstudio-IDE-1.png)
+
+:::
+
+## `git add`
+
+![](img/rstudio-IDE-2.png)
+
+## `git diff --staged`
+
+![](img/rstudio-IDE-3.png)
+
+::: {.notes}
+This compares your Staging Area with your last commit. 
+It's the perfect final check to ensure you're not committing a mistake 
+
+:::
+
+## `git commit -m "Message"`
+
+![](img/rstudio-IDE-4.png)
 
 ## `.gitignore`: What to Leave Out
 
@@ -365,6 +393,7 @@ This makes your software and analysis a first-class, citable research output!
 
 -   [Software Carpentry - Version Control with Git](https://swcarpentry.github.io/git-novice/)
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+-   [Git Documentation](https://git-scm.com/docs)
 -   [GitHub's Resources](https://docs.github.com/en)
 -   [GitHub's Cheat Sheet (PDF)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
-
+-   [Pro Git Book - Free online](https://git-scm.com/book/en/v2)
