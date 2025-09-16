@@ -414,7 +414,6 @@ This makes your software and analysis a citable research output!
 -   [GitHub's Resources](https://docs.github.com/en)
 -   [GitHub's Cheat Sheet (PDF)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 -   [Pro Git Book - Free online](https://git-scm.com/book/en/v2)
--   [Resetting, checking out & reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 
 ## Before we leave
 
