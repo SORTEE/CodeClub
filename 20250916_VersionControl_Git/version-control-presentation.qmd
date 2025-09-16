@@ -165,14 +165,14 @@ Popular Alternatives:
 
 - **GitLab**: Very popular in academia and enterprise. Powerful built-in features for the entire software lifecycle
 - **Bitbucket**: Made by Atlassian, integrates tightly with tools like Jira
-- **Self-Hosted**: Your university or research institute might host its own GitLab or Gitea server for better data privacy and control.
+- **Self-Hosted**: Your university or research institute might host its own GitLab or [Gitea](https://github.com/go-gitea/gitea) server for better data privacy and control.
 
 ::: {.notes}
-It's important to remember that while we're using GitHub today because it's the most popular and has great community features, it is not the only option.
+It's important to remember that while we're talking about GitHub today because it's the most popular and has great community features, it is not the only option.
 
 There are other major platforms like GitLab and Bitbucket, which offer very similar features.
 
-Crucially for researchers, your own university or institute might have its own private Git server, often running GitLab. This can be a huge advantage for projects with data privacy concerns.
+Also for researchers, your own university or institute might have its own private Git server, often running GitLab. This can be a huge advantage for projects with data privacy concerns.
 
 The most important thing to remember is that the local commands you're learning today will work no matter which remote service you're using. You are learning the skill of Git, not just how to use one website
 :::
@@ -328,6 +328,23 @@ Let's say you accidentally `git add` a file you didn't mean to. `git status` its
 Or maybe you made your commit but immediately realized you had a typo in the message, or you forgot to include one file. You can easily fix this with `git commit --amend`. This command essentially re-does the previous commit, but with your new changes. It's a very safe and common way to keep your local history clean.
 :::
 
+## How to go "back in time"
+
+:::: {.columns}
+::: {.column width="45%"}
+
+![](img/doc-backintime.jpg){width=80%}
+
+:::
+
+::: {.column width="55%"}
+1. `git checkout`: You can visit the past but you can't change it
+2. `git revert`: You can't change the past, but you can write a new entry that corrects the record
+3. `git reset`: You go back and destroy the previous timeline. Marti McFly will never be born.
+:::
+
+::::
+
 ## Do you use RStudio?
 
 Everything is simpler, then! <br>
@@ -387,7 +404,7 @@ Services like [Zenodo](https://zenodo.org/) can link to your GitHub repository.
 2.  You "release" a version on GitHub.
 3.  Zenodo archives that version and gives you a **citable DOI**.
 
-This makes your software and analysis a first-class, citable research output!
+This makes your software and analysis a citable research output!
 
 ## Where to Go From Here?
 
@@ -397,3 +414,16 @@ This makes your software and analysis a first-class, citable research output!
 -   [GitHub's Resources](https://docs.github.com/en)
 -   [GitHub's Cheat Sheet (PDF)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 -   [Pro Git Book - Free online](https://git-scm.com/book/en/v2)
+-   [Resetting, checking out & reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+
+## Before we leave
+
+*No Code Club next month!*
+<br><br>
+[**SORTEE Virtual Conference**](https://sortee.org/upcoming/) will run from *October 15th* to *October 16th*!
+You can register [here](https://events.humanitix.com/sortee-conference-2025), it's free for SORTEE Members!
+
+::: {.fragment}
+![](img/conference.png)
+
+:::
