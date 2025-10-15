@@ -22,7 +22,8 @@ format:
 :::
 
 ::: notes
-Welcome everyone to our session on how to start your own code club! We’re Cecilia, Saoirse, Natalie, and Corné. Today is 16th October, and we have 55 minutes together. We’ll use a shared Google Doc for collaboration—QR code coming up next. 
+Welcome everyone to our session on how to start your own code club! This session was organised for you by me (Cecilia), Saoirse, Natalie, and Corné. We will be your facilitators today. All of us are or have been Code Club leaders, and we can't wait to hear your experiences, questions and concerns about running (or even participating!) in a Code Club.
+Today we have 55 minutes together. 
 :::
 
 ## Housekeeping - How to Participate
@@ -43,7 +44,8 @@ Welcome everyone to our session on how to start your own code club! We’re Ceci
 ::::
 
 ::: notes
-Here’s how to engage: use raise hand to speak, chat for questions, or type directly in the Doc. You can also react with emojis for quick votes. You can access the google doc via the QR code or use the link in the chat  
+A bit of housekeeping first. As our wonderful TA already mentioned, we all abide to SORTEE Code of Conduct (share link). We want to create an environment that is safe for everyone to share, and have their opinions and experiences feel valued. For this reason, please remember to raise your hand if you'd like to speak or ask qustions live. If you can't unmute, or don't feel comfortable to do so, you can use the Zoom chat for questions, or type directly in the Google Doc which is in this qr code and is being shared in the chat. 
+You can also react with emojis for quick votes! You can share as much or as little you want, and there's no "stupid questions"!  
 :::
 
 ---
@@ -93,7 +95,7 @@ Ask participants to vote!
 
 
 ::: notes
-Here are five categories of common challenges. In the Google Doc, add +1 to the ones you relate to most, or add new ones. We’ll spend 5 minutes on voting and choosing top challenges.
+Here are five categories of common challenges. In the Google Doc, add +1 to the ones you relate to most, or add new ones. We’ll spend 5-6 minutes on voting and choosing top challenges. Then we will go together over possible solutions! Please feel free to add anything that comes to mind, both from the persective of a CC Leader, potential leader, but also as a participant!
 :::
 
 ---
