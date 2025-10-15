@@ -53,7 +53,7 @@ You can also react with emojis for quick votes! You can share as much or as litt
 ## What Is a Code Club?
 
 :::{.fragment}
-> A code club is a **recurring gathering** where people learn coding skills together through **peer support and hands-on practice**.  
+> A code club is a **recurring meeting** where people learn coding skills together through **peer support and hands-on practice**.  
 > Format, topics, and structure vary widely based on community needs.
 
 :::
@@ -67,10 +67,10 @@ You can also react with emojis for quick votes! You can share as much or as litt
 ## Types of Sessions
 
 ::: {.smaller-font}
-| "Seminar" Talks | Hands-on Workshops | Hacky Hours |
-| ------------------- | ------------------ | ----------- |
-| Presenter shares a tool or concept | Group works through a tutorial | Bring your own problem; peer help |
-| Moderate-high prep | Moderate prep | Zero prep required |
+|| "Seminar" Talks | Hands-on Workshops | Hacky Hours |
+|--------| ------------------- | ------------------ | ----------- |
+|Concept| Presenter shares a tool or concept | Group works through a tutorial | Bring your own problem; peer help |
+|Investment| Moderate-high prep | Moderate prep | Zero prep required |
 :::
 
 ::: notes
