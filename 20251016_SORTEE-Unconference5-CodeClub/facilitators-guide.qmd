@@ -1,0 +1,36 @@
+---
+title: "Facilitators-Guide"
+format: html
+---
+
+## Agenda timing
+
+-   Start on slides - Slides 1+2 (0-3 min):
+-   Switch to Google Doc (3-10 min):
+    -   Orientation on the google doc
+    -   What brings you here? Vote!
+    -   What does Code Club means to you, what is it for you, or what you'd like it to be
+-   Slides (10-12 min): Slide 3 Code Club definition
+-   Slide 4: type of sessions definition
+-   Google Doc (12-25 min):
+    -   Experience sharing: what type of session have you run, would you be interested in running or have participated to?
+-   Back to slides (25-30 min): Slides 5-6 on challenges
+-   Stay in Google Doc (30-47 min): ALL discussion happens here - longest stretch
+-   Final slide (47-55 min): Slide 7 for closing
+
+## List of links to copy in the Zoom chat:
+
+Want to enjoy SORTEE member benefits too? Become a SORTEE member! https://app.joinit.com/o/sortee Join our committee in 2026! Become a SORTEE volunteer: https://docs.google.com/forms/d/e/1FAIpQLSe1t7EK3MQPGPlSSJ14\_-eSROkdLSV_Nt1Eg9l564u5dTeRag/viewform?usp=header Hackathon 1 materials (slides and templates): https://osf.io/f8e6c
+
+Monthly Code Club: - Information: https://sortee.org/code_club/- Blog: https://sortee.org/tags/code-club/ - Schedule:  https://docs.google.com/spreadsheets/d/1rOOOE7ghPduwtFftG0DJJf0DXVigAdcmQ0xdEwbKQXo/edit?gid=1671163307#gid=1671163307
+
+Sign up for calendar invites: https://forms.gle/yKrEm6xAKZtom5kt7 Want to enjoy these benefits too? Become a SORTEE member! https://app.joinit.com/o/sortee
+
+Join our committee in 2026! Become a SORTEE volunteer: https://docs.google.com/forms/d/e/1FAIpQLSe1t7EK3MQPGPlSSJ14\_-eSROkdLSV_Nt1Eg9l564u5dTeRag/viewform?usp=header
+
+## Ice-breaking Questions among facilitators:
+
+-   What was your favourite sessions ever run?
+-   go-to resources you recommend for coding beginners
+-   What challenges are you still facing, despite your experience?
+-   What is your favorite Code Club session type?
