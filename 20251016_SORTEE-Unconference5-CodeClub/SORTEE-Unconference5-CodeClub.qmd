@@ -67,10 +67,10 @@ You can also react with emojis for quick votes! You can share as much or as litt
 ## Types of Sessions
 
 ::: {.smaller-font}
-|| "Seminar" Talks | Hands-on Workshops | Hacky Hours |
-|--------| ------------------- | ------------------ | ----------- |
-|Concept| Presenter shares a tool or concept | Group works through a tutorial | Bring your own problem; peer help |
-|Investment| Moderate-high prep | Moderate prep | Zero prep required |
+|            | "Seminar" Talks | Hands-on Workshops | Hacky Hours |
+|------------| ------------------- | ------------------ | ----------- |
+|  *Concept* | Presenter shares a tool or concept | Group works through a tutorial | Bring your own problem; peer help |
+|*Investment*| Moderate-high prep | Moderate prep | Zero prep required |
 :::
 
 ::: notes
@@ -112,5 +112,5 @@ Here are five categories of common challenges. In the Google Doc, add +1 to the 
 *Start small. Iterate.* 🚀
 
 ::: notes
-We’re in the final few minutes—please drop one tiny action step in the Doc or chat. Then we’ll wrap up with these resources. The Doc remains open for 48 hours, and you can join our Slack or visit the repo for materials. Remember: start small and iterate!”  
+We’re in the final few minutes—please drop one tiny action step in the Doc or chat. Then we’ll wrap up with these resources. The Doc will remain open for 48 hours, and you can join our Slack or visit the repo for materials. Remember: start small and iterate!”  
 :::

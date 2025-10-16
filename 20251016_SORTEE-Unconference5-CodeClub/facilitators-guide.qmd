@@ -30,7 +30,7 @@ Join our committee in 2026! Become a SORTEE volunteer: https://docs.google.com/f
 
 Link to today's interactive Google Doc: https://docs.google.com/document/d/1tsYnAMkJ13nurk2ciZq8duN8WeTdaBpnb9gFtwFyomM/edit?tab=t.0
 
-Link to today's slides: [ADD half hour before session!]
+Link to today's slides: https://cecibaldoni.quarto.pub/how-to-start-your-own-code-club/#/title-slide
 
 Link to Slack Channel of Unconference 5 - How to start your own Code Club: https://sortee.slack.com/archives/C09H1BW54N6
 
