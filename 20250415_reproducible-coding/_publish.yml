@@ -1,4 +1,4 @@
-- source: reproducible_coding.qmd
+- source: reproducible-coding.qmd
   quarto-pub:
     - id: d65692dd-6460-4213-a0d7-dc7dc02db985
       url: https://cecibaldoni.quarto.pub/introduction-to-reproducible-coding-environment
