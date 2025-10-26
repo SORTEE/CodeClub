@@ -1,0 +1,116 @@
+---
+title: "How to Start Your Own Code Club"
+subtitle: "SORTEE Conference 2025 - Unconference Session 5"
+date: "16 October 2025"
+format:
+  revealjs:
+    transition: fade
+    incremental: true
+    slide-number: true
+    chalkboard: true
+    footer: "SORTEE Code Club Unconference | 16 Oct 2025"
+    logo: img/main_green.png
+    theme: sortee_style.scss
+---
+
+## How to Start Your Own Code Club
+
+::: {.centered}
+**SORTEE Conference 2025**  
+*Session date*: 16/10/2025  
+*Facilitators*: Cecilia Baldoni, Saoirse Kelleher, Natalie van Dis, Corné de Groot  
+:::
+
+::: notes
+Welcome everyone to our session on how to start your own code club! This session was organised for you by me (Cecilia), Saoirse, Natalie, and Corné. We will be your facilitators today. All of us are or have been Code Club leaders, and we can't wait to hear your experiences, questions and concerns about running (or even participating!) in a Code Club.
+Today we have 55 minutes together. 
+:::
+
+## Housekeeping - How to Participate
+
+:::: columns
+::: {.column width="60%"}
+- 🖐️ Raise Hand to speak  
+- 💬 Use the Zoom chat  
+- ✏️ Type in the Google Doc  
+- 👍 React with emoji  
+- Your input is anonymous!  
+:::
+
+::: {.column width="40%"}
+![](img/QR-code.png)
+
+:::
+::::
+
+::: notes
+A bit of housekeeping first. As our wonderful TA already mentioned, we all abide to SORTEE Code of Conduct (share link). We want to create an environment that is safe for everyone to share, and have their opinions and experiences feel valued. For this reason, please remember to raise your hand if you'd like to speak or ask qustions live. If you can't unmute, or don't feel comfortable to do so, you can use the Zoom chat for questions, or type directly in the Google Doc which is in this qr code and is being shared in the chat. 
+You can also react with emojis for quick votes! You can share as much or as little you want, and there's no "stupid questions"!  
+:::
+
+---
+
+## What Is a Code Club?
+
+:::{.fragment}
+> A code club is a **recurring meeting** where people learn coding skills together through **peer support and hands-on practice**.  
+> Format, topics, and structure vary widely based on community needs.
+
+:::
+
+::: notes
+
+:::
+
+---
+
+## Types of Sessions
+
+::: {.smaller-font}
+|            | "Seminar" Talks | Hands-on Workshops | Hacky Hours |
+|------------| ------------------- | ------------------ | ----------- |
+|  *Concept* | Presenter shares a tool or concept | Group works through a tutorial | Bring your own problem; peer help |
+|*Investment*| Moderate-high prep | Moderate prep | Zero prep required |
+:::
+
+::: notes
+Code clubs take many forms. Seminar-style talks introduce concepts; workshops build skills together; hacky hours let you solve real problems with no prep. We’ll see these as solutions to challenges later
+:::
+
+---
+
+## Common Challenges
+
+⏰ Time & Logistics  
+👥 Engagement & Attendance  
+📚 Content & Topics  
+🤝 Inclusivity & Accessibility  
+🏢 Resources & Support  
+
+## Example solution
+
+Ask participants to vote!
+
+![](img/rank-topics.png)
+
+
+::: notes
+Here are five categories of common challenges. In the Google Doc, add +1 to the ones you relate to most, or add new ones. We’ll spend 5-6 minutes on voting and choosing top challenges. Then we will go together over possible solutions! Please feel free to add anything that comes to mind, both from the persective of a CC Leader, potential leader, but also as a participant!
+:::
+
+---
+
+## Next Steps & Resources
+
+**Stay Connected**  
+- Google Doc will stay open 48 hours  
+- Engage with us in the Slack channel `#conf2025-u05-how-to-start-your-own-code-club`
+- Share and bookmark resources!  
+
+<br><br>
+
+*Start small. Iterate.* 🚀
+
+::: notes
+We’re in the final few minutes—please drop one tiny action step in the Doc or chat. Then we’ll wrap up with these resources. The Doc will remain open for 48 hours, and you can join our Slack or visit the repo for materials. Remember: start small and iterate!”  
+:::
