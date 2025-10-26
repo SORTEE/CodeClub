@@ -324,8 +324,22 @@ We warmly welcome contributions from anyone interested in helping improve this g
 
 **Ways to contribute**:
 
--   **Pull Request**: Propose edits or new sections by forking the GitHub repository and submitting a `Pull Request`. For clarity and fast review, please describe the purpose of your change clearly in the PR description.
--   **Open an issue**: Spot a typo, confusing wording, or missing topic? Open an `issue` to discuss it before making changes, or to suggest new ideas and resources.
+-   **Pull Request**: Propose edits or new sections by forking the [GitHub repository](https://github.com/SORTEE/CodeClub/tree/main) and submitting a `Pull Request`. For clarity and fast review, please describe the purpose of your change clearly in the PR description. Here you can see the repo structure:
+
+```         
+📁 20250318_decode-the-code/
+📁 20250415_reproducible-coding/
+📁 20250520_notebook-to-paper/
+...
+📁 20251016_SORTEE-Unconference5-CodeClub/
+ ├── guide/                         ← This guide's source files
+ │    ├── index.qmd                 ← Main Quarto Markdown source
+ │    ├── style.scss               ← SCSS file for custom styling
+ ├── slides/                       ← Slides from unconference session
+ └── facilitator-guide/            ← Internal docs for facilitators for the unconference
+```
+
+-   **Open an issue**: Spot a typo, confusing wording, or missing topic? Open an `issue` to the [GitHub repository](https://github.com/SORTEE/CodeClub/tree/main) to discuss it before making changes, or to suggest new ideas and resources.
 -   You’re encouraged to reuse and customize this guide for your own lab, community, or institution. Please include credit to [SORTEE](https://sortee.org/) and the original contributors.
 
 Respect the [SORTEE code of conduct](https://sortee.org/codeofconduct/) to maintain an open, inclusive, and supportive environment.
