@@ -332,11 +332,11 @@ We warmly welcome contributions from anyone interested in helping improve this g
 📁 20250520_notebook-to-paper/
 ...
 📁 20251016_SORTEE-Unconference5-CodeClub/
- ├── guide/                         ← This guide's source files
- │    ├── index.qmd                 ← Main Quarto Markdown source
- │    ├── style.scss               ← SCSS file for custom styling
- ├── slides/                       ← Slides from unconference session
- └── facilitator-guide/            ← Internal docs for facilitators for the unconference
+ ├── guide/                             ← This guide's source files
+ │    ├── how-to-start-a-code-club.qmd  ← Main Quarto Markdown source
+ │    ├── style.scss                    ← SCSS file for custom styling
+ ├── slides/                            ← Slides from unconference session
+ └── facilitator-guide/                 ← Internal docs for facilitators for the unconference
 ```
 
 -   **Open an issue**: Spot a typo, confusing wording, or missing topic? Open an `issue` to the [GitHub repository](https://github.com/SORTEE/CodeClub/tree/main) to discuss it before making changes, or to suggest new ideas and resources.
