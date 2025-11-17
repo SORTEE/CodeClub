@@ -1,0 +1,145 @@
+---
+title: "Data simulation & Power analysis"
+format: 
+  revealjs:
+    incremental: true
+    chalkboard: true
+    logo: img/main_green.png
+    theme: sortee_style.scss
+    height: 900
+    width: 1600
+    transition: fade
+    code-line-numbers: true
+---
+
+## Welcome
+:::: columns
+::: {.column width="50%"}
+![](img/sortee_codeclub-white.png)
+:::
+
+::: {.column width="50%"}
+
+::: fragment
+- Every third Tuesday of the Month
+- Topics and schedule here: [SORTEE Code Club Schedule](https://docs.google.com/spreadsheets/d/1rOOOE7ghPduwtFftG0DJJf0DXVigAdcmQ0xdEwbKQXo/edit?gid=1671163307#gid=1671163307)
+- Do you have a topic in mind? [Write us!](https://forms.gle/eZy81dUymiZNJetu8)
+:::
+
+:::
+::::
+
+## About Code Club
+
+:::: columns
+::: {.column width="50%"}
+![](img/sortee_codeclub-white.png)
+
+:::
+
+::: {.column width="50%"}
+**SORTEE Code Club** is an online meeting where **people come together to learn, share, and collaborate on coding-related topics** in an informal and supportive environment
+:::
+::::
+
+## SORTEE Resources
+
+Do you know about **SORTEE Resources**? <br><br>
+
+::::: columns
+::: {.column width="50%"}
+[SORTEE Library of Code Mistakes](https://docs.google.com/presentation/d/12QN3WUc5v1Df7OArEox2U7l_N_qnHHuwzjCYiI4idC8/edit#slide=id.g2c3d428e31a_0_53) <br> <br> [Find an ORTEE Reviewer](https://docs.google.com/spreadsheets/d/1eHdU8o0psUj6Y4dPxqA-uW8Fc8SQVwzY1BnEbXM5k54/edit?gid=0#gid=0) <br> <br> [GitHub SORTEE](https://github.com/SORTEE)
+:::
+
+::: {.column width="50%"}
+![](img/main_green.png)
+:::
+:::::
+
+## Today's agenda
+
+**Goal for the next 60 minutes:**
+
+Understand how to simulate data and perform power analyses 
+
+- general theory
+- a worked example
+
+## What is data simulation
+
+
+"the process of generating synthetic data that closely mimics the properties and characteristics of real-world data"
+
+how does one do that?
+
+
+## Sampling from distributions
+
+![](img/Distributions.jpg)
+
+Sampling from distributions with different parameters
+e.g. normal(mean = 0, sd = 1)
+
+## Data structure
+
+Data has structure & hierarchy
+![](img/Data_hierarchy.jpg)
+![](img/Data_str_social.jpg)
+
+
+## Data equation
+
+Data should be generated similar to how we think the biology/ecology generates the data
+$$
+Data = intercept + beta * covariate + error 
+$$
+
+Simulation made easy with SQuID sim [GitHub SQUiDsim](https://squidgroup.org/)
+![](img/SQuIDsim.jpg)
+
+## What is power? (analysis)
+
+Power: "Probability to correctly detect a true effect"
+
+
+Power analysis : "method used to determine the minimum sample size and study design required to have a high probability of detecting a true effect"
+
+$$
+power = 1- \beta 
+$$
+$$\beta$$ = probability of failing to detect a true effect
+
+
+## What affects power?
+
+- Sample size (n)
+- (Significance) threshold $$\alpha$$
+- Effect size
+- Sampling variability
+- Study design
+
+## Frequentist versus Bayesian approaches
+
+Frequentist:
+
+- p-value 
+- Confidence interval
+
+Bayesian:
+
+- Credible interval
+- Region of practical equivalence (ROPE)
+- Bayes Factor
+
+## How simulation and power analysis contribute to open science
+
+- Transparency regarding our estimates
+- Verify that our models estimate what we want them to estimate
+- Simulations and power analyses can be shared on repositories
+- a priori modelling plans
+
+## Worked example
+
+Say we want to setup a study to estimate how organism x (come up with something fun) respond to different treatments of x
+
+Let's have a look at the code!
