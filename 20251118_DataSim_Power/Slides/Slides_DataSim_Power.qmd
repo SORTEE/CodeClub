@@ -118,7 +118,7 @@ $$\beta$$ = probability of failing to detect a true effect
 - Sampling variability
 - Study design
 
-## Frequentist versus Bayesian approaches
+## Frequentist versus Bayesian approaches I 
 
 Frequentist:
 
@@ -131,6 +131,22 @@ Bayesian:
 - Region of practical equivalence (ROPE)
 - Bayes Factor
 
+## Frequentist versus Bayesian approaches II
+
+![](img/Freq_vs_Bayes.jpg)
+from Kruschke & Lidell 2018
+
+## Frequentist versus Bayesian approaches III 
+
+![](img/Freq_vs_Bayes_power.jpg)
+from Kruschke & Lidell 2018
+
+## Precision & Accuracy
+
+Another avenue of parameter estimation in regard to sample size:
+
+![](img/Precision_Accuracy.png)
+
 ## How simulation and power analysis contribute to open science
 
 - Transparency regarding our estimates
@@ -140,6 +156,6 @@ Bayesian:
 
 ## Worked example
 
-Say we want to setup a study to estimate how organism x (come up with something fun) respond to different treatments of x
+Say we want to set up a study to estimate how individuals of [insert your study species]  respond to different climatic treatments: cold, control and warm 
 
 Let's have a look at the code!

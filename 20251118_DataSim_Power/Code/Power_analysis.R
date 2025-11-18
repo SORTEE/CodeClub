@@ -77,7 +77,7 @@ head(test)
 
 # Simualte data n.sim times
 
-# Using a for loop
+# Using a for loop (can be slow)
 dat <- vector("list", length = n.sim)
 
 for(i in 1:n.sim){
