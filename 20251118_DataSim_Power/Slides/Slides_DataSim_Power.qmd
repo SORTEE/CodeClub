@@ -72,7 +72,7 @@ Understand how to simulate data and perform power analyses
 
 <br>
 
-how does one do that?
+- how does one do that?
 
 
 ## Sampling from distributions
@@ -98,9 +98,9 @@ $$
 Data = intercept + beta * covariate + error 
 $$
 
-Simulation made easy with SQuID sim [GitHub SQUiDsim](https://squidgroup.org/)
+Simulation made easy with SQuID sim [GitHub SQUiDsim](https://squidgroup.org/squidSim_vignette/)
 
-![](img/SQuIDsim.JPG)
+![](img/SQuIDsim.jpg)
 
 ## What is power? (analysis)
 
@@ -112,13 +112,14 @@ Power analysis : "method used to determine the minimum sample size and study des
 $$
 power = 1- \beta 
 $$
-$$\beta$$ = probability of failing to detect a true effect
+
+beta = probability of failing to detect a true effect
 
 
 ## What affects power?
 
 - Sample size (n)
-- (Significance) threshold $$\alpha$$
+- (Significance) threshold value
 - Effect size
 - Sampling variability
 - Study design
@@ -147,7 +148,7 @@ Bayesian:
 
 ## Precision & Accuracy
 
-Another avenue of parameter estimation in regard to sample size:
+Another avenue of effect size estimation in regard to sample size:
 
 ![](img/Precision_Accuracy.png)
 
@@ -156,10 +157,13 @@ Another avenue of parameter estimation in regard to sample size:
 - Transparency regarding our estimates
 - Verify that our models estimate what we want them to estimate
 - Simulations and power analyses can be shared on repositories
-- a priori modelling plans
+- Define modelling plans a priori 
+- Set estimation criteria a priori 
 
 ## Worked example
 
 Say we want to set up a study to estimate how individuals of [insert your study species]  respond to different climatic treatments: cold, control and warm 
 
-Let's have a look at the code!
+- Simulate fixed effects & interaction
+- Simulate individual values (BLUPS) & their correlation
+- Let's have a look at the code!
