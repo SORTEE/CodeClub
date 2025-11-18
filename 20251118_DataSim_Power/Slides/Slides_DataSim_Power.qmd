@@ -70,6 +70,8 @@ Understand how to simulate data and perform power analyses
 
 "the process of generating synthetic data that closely mimics the properties and characteristics of real-world data"
 
+<br>
+
 how does one do that?
 
 
@@ -83,8 +85,10 @@ e.g. normal(mean = 0, sd = 1)
 ## Data structure
 
 Data has structure & hierarchy
-![](img/Data_hierarchy.jpg)
-![](img/Data_str_social.jpg)
+
+![](img/Data_hierarchy.JPG)
+
+![](img/Data_str_social.JPG)
 
 
 ## Data equation
@@ -95,7 +99,8 @@ Data = intercept + beta * covariate + error
 $$
 
 Simulation made easy with SQuID sim [GitHub SQUiDsim](https://squidgroup.org/)
-![](img/SQuIDsim.jpg)
+
+![](img/SQuIDsim.JPG)
 
 ## What is power? (analysis)
 
@@ -133,13 +138,12 @@ Bayesian:
 
 ## Frequentist versus Bayesian approaches II
 
-![](img/Freq_vs_Bayes.jpg)
-from Kruschke & Lidell 2018
+![from Kruschke & Lidell 2018](img/Freq_vs_Bayes.jpg)
 
 ## Frequentist versus Bayesian approaches III 
 
-![](img/Freq_vs_Bayes_power.jpg)
-from Kruschke & Lidell 2018
+![from Kruschke & Lidell 2018](img/Freq_vs_Bayes_power.jpg)
+
 
 ## Precision & Accuracy
 
