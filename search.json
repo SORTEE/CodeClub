@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About SORTEE Code Club",
+    "section": "",
+    "text": "SORTEE Code Club runs free, community-led coding sessions for researchers in ecology and evolutionary biology. We aim to:\n\nLower the barrier to reproducible research practices\nBuild community across institutions and career stages\nShare knowledge openly — all materials are CC-licensed\nSupport SORTEE’s mission of more open, reliable, transparent research"
+  },
+  {
+    "objectID": "about.html#our-mission",
+    "href": "about.html#our-mission",
+    "title": "About SORTEE Code Club",
+    "section": "",
+    "text": "SORTEE Code Club runs free, community-led coding sessions for researchers in ecology and evolutionary biology. We aim to:\n\nLower the barrier to reproducible research practices\nBuild community across institutions and career stages\nShare knowledge openly — all materials are CC-licensed\nSupport SORTEE’s mission of more open, reliable, transparent research"
+  },
+  {
+    "objectID": "about.html#how-sessions-work",
+    "href": "about.html#how-sessions-work",
+    "title": "About SORTEE Code Club",
+    "section": "How Sessions Work",
+    "text": "How Sessions Work\nWe meet online every third Tuesday of the month. We host two types of sessions:\n\nTraining Sessions: Learn new coding skills, packages, models, and tools that support open science.\nHacky Hours: Casual peer-to-peer sessions for code review, troubleshooting, and sharing tips and tricks.\n\nCheck the full Code Club schedule\n\n\n\n\n\n\nTipFirst time? Here’s what to expect\n\n\n\nSessions are informal and collaborative. There’s no such thing as a silly question. The presenter shares their screen, you follow along, and we all learn together.\n\n\n\n\n\nTime\nWhat happens\n\n\n\n\n0:00\nWelcome, housekeeping (5 min)\n\n\n0:05\nMain tutorial / demo (40 min)\n\n\n0:45\nOpen Q&A + troubleshooting (10 min)\n\n\n0:55\nWrap up, next session preview (5 min)\n\n\n\nSessions are held on Zoom. Links are distributed via Slack one week and again one hour before the session."
+  },
+  {
+    "objectID": "about.html#acknowledgements",
+    "href": "about.html#acknowledgements",
+    "title": "About SORTEE Code Club",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\n\n\n\n\n\nSORTEE Code Club is an entirely volunteer effort. We are grateful to all SORTEE members who have shared their knowledge."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SORTEE Code Club",
+    "section": "",
+    "text": "NoteNext Session: June 23, 2026 · 09:00 UTC\n\n\n\nTopic: TADA-SORTEE code guidelines with Ed Ivimey-Cook\nInterested? Become a SORTEE Member!\n\n\n\n\n\n\n\n\nTip💡 New to the club? Start here\n\n\n\n\n\n\nJoin SORTEE to get session links\nCheck out the resources page for beginner-friendly guides\nNo previous coding experience needed — all skill levels welcome!"
+  },
+  {
+    "objectID": "index.html#announcements",
+    "href": "index.html#announcements",
+    "title": "SORTEE Code Club",
+    "section": "",
+    "text": "NoteNext Session: June 23, 2026 · 09:00 UTC\n\n\n\nTopic: TADA-SORTEE code guidelines with Ed Ivimey-Cook\nInterested? Become a SORTEE Member!\n\n\n\n\n\n\n\n\nTip💡 New to the club? Start here\n\n\n\n\n\n\nJoin SORTEE to get session links\nCheck out the resources page for beginner-friendly guides\nNo previous coding experience needed — all skill levels welcome!"
+  },
+  {
+    "objectID": "index.html#who-we-are",
+    "href": "index.html#who-we-are",
+    "title": "SORTEE Code Club",
+    "section": "Who We Are",
+    "text": "Who We Are\n\n\n\nSORTEE Code Club is part of the Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE).\nWe meet every month to learn, share, and improve our coding skills. Whether you’re debugging your first R script or building a Shiny app, there’s a place for you here.\nWe cover:\n\n🐍 R and Python for ecological data analysis\n📊 Data visualisation with ggplot2 and beyond\n🔁 Reproducible workflows with Quarto and RMarkdown\n🌐 Open science tools: OSF, GitHub, Zenodo"
+  },
+  {
+    "objectID": "index.html#a-little-reproducible-science",
+    "href": "index.html#a-little-reproducible-science",
+    "title": "SORTEE Code Club",
+    "section": "A Little Reproducible Science 🔬",
+    "text": "A Little Reproducible Science 🔬\nThe plot below is generated from R code embedded directly in this page — this is what makes Quarto powerful!\n\nlibrary(ggplot2)\n\nset.seed(42)\nn &lt;- 80\ndata &lt;- data.frame(precipitation_mm = runif(n, 200, 1800),\n                   temperature_c    = runif(n, 5, 30))\n\ndata$species_richness &lt;- round(0.05 * data$precipitation_mm - 0.8  * data$temperature_c +\n                                 rnorm(n, 0, 8) + 20)\n\nggplot(data, aes(x = precipitation_mm, y = species_richness, colour = temperature_c)) +\n  geom_point(alpha = 0.7, size = 2.5) +\n  geom_smooth(method = \"lm\", se = TRUE) +\n  scale_colour_gradient(low = \"#2C9B8A\", high = \"#E07B39\",\n                        name = \"Temperature (°C)\") +\n  labs(x = \"Annual precipitation (mm)\",\n       y = \"Species richness\",\n       caption = \"Simulated data for demonstration\") +\n  theme_bw(base_size = 12)\n\n\n\n\nSimulated species richness across a precipitation gradient"
+  },
+  {
+    "objectID": "index.html#get-involved",
+    "href": "index.html#get-involved",
+    "title": "SORTEE Code Club",
+    "section": "Get Involved",
+    "text": "Get Involved\n\n\n🎤 Volunteer to Present🛠 Suggest a Topic\n\n\nWe’re always looking for people to share their coding knowledge — beginners welcome! You could run a:\n\nTutorial (30–45 min): teach a skill you’ve recently learned\nCode review (20 min): share a workflow for group feedback\nDemo (10 min): show a package or tool you like\n\nExpress interest →\n\n\nMissing something from our schedule? Tell us what you’d like to learn.\nCurrent wishlist:\n\nBayesian statistics in R (Stan / brms)\nSpatial data with sf and terra\nMachine learning for ecologists\nPython for R users\n\nOpen an issue on GitHub →\n\n\n\n\nSORTEE Code Club is a volunteer-run community committed to a welcoming, inclusive environment for all skill levels. Read our Code of Conduct."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Learning Resources",
+    "section": "",
+    "text": "R for Data Science (2e)\nSORTEE Resources Hub\nPosit Cheatsheets"
+  },
+  {
+    "objectID": "resources.html#getting-started-with-r",
+    "href": "resources.html#getting-started-with-r",
+    "title": "Learning Resources",
+    "section": "",
+    "text": "R for Data Science (2e)\nSORTEE Resources Hub\nPosit Cheatsheets"
+  },
+  {
+    "objectID": "resources.html#reproducible-research-quarto",
+    "href": "resources.html#reproducible-research-quarto",
+    "title": "Learning Resources",
+    "section": "Reproducible Research & Quarto",
+    "text": "Reproducible Research & Quarto\n\nQuarto Documentation\nAwesome Quarto\nThe Turing Way\nHappy Git and GitHub for the useR\n\n\n\n\n\n\n\nWarningOn using AI assistants for code\n\n\n\nAI tools can speed up your coding but also confidently produce incorrect results. Always test AI-generated code on data you understand before using it in real analyses."
+  },
+  {
+    "objectID": "resources.html#quarto-website-resources",
+    "href": "resources.html#quarto-website-resources",
+    "title": "Learning Resources",
+    "section": "Quarto Website Resources",
+    "text": "Quarto Website Resources\n\nPublish your Quarto website with Github Pages\nEverything about navbars, sidebars, footers\nAbout page templates\nDo you want a blog?\nThe theme gallery\n\n\n… for the adventurous!\nDo you want to customise your layout? You need .scss!\nSass is the name of the tool, SCSS is the syntax we use. When you search for resources you’ll find both names used interchangeably, and that’s fine. The one thing to watch out for: if an example you find doesn’t use curly braces {} and semicolons ;, it’s using the older Sass syntax — you can usually just add curly braces and semicolons to make it work as SCSS. Look at the example below!\n\nSassscss\n\n\n$primary: #2A7F62\n\nnav\n  background: $primary\n\n\n$primary: #2A7F62;\n\nnav {\n  background: $primary;\n}\n\n\n\n\nQuarto guide on customising\nSass Basics\nCSS with SCSS - Youtube\nHTML and CSS for absolute beginners - Youtube"
+  },
+  {
+    "objectID": "resources.html#website-made-in-quarto-by-sortee-members",
+    "href": "resources.html#website-made-in-quarto-by-sortee-members",
+    "title": "Learning Resources",
+    "section": "Website made in Quarto by SORTEE Members",
+    "text": "Website made in Quarto by SORTEE Members\nBefore copying code from GitHub, always check the LICENSE of the repo!\n\n\n\nWebsite\nGithub Repo\n\n\n\n\nCecilia Baldoni\nWebsite Github\n\n\n\n ~ COMING SOON ~ \n\nResource suggestions welcome! Open an issue on GitHub or message us on Slack."
+  }
+]
