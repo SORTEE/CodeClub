@@ -1,0 +1,145 @@
+---
+# FRONT MATTER — page-level settings (override _quarto.yml)
+title: "SORTEE Code Club"
+subtitle: "Open & reproducible coding for ecologists and evolutionary biologists"
+
+# title-block-banner gives the title area a coloured background
+title-block-banner: true
+
+# Do you remember how toc was "true" in the yaml? We can override it for each page!
+toc: false
+---
+
+## 📣 Announcements
+
+<!-- CALLOUT BLOCKS
+     Quarto has 5 types: note, tip, warning, important, caution
+     They render with icons and colour automatically — no CSS needed.
+     Add a title with ## inside, or omit it for a plain callout.     -->
+
+::: {.callout-note}
+## Next Session: June 23, 2026 · 09:00 UTC
+
+**Topic:** TADA-SORTEE code guidelines with [Ed Ivimey-Cook](https://eivimeycook.github.io/)
+
+Interested? [Become a SORTEE Member!](https://sortee.org/join/){target="_blank"}
+:::
+
+::: {.callout-tip collapse="true"}
+## 💡 New to the club? Start here
+
+1. Join [SORTEE](https://sortee.org/join/){target="_blank"} to get session links
+2. Check out the [resources page](resources.qmd) for beginner-friendly guides
+3. No previous coding experience needed — all skill levels welcome!
+
+:::
+
+
+## Who We Are
+
+<!-- COLUMNS LAYOUT
+     Pure Quarto syntax — works with any theme, no CSS needed.
+     Width values should add up to 100%.                          -->
+
+::: {.columns}
+
+::: {.column width="60%"}
+
+SORTEE Code Club is part of the [Society for Open, Reliable, and Transparent
+Ecology and Evolutionary Biology (SORTEE)](https://www.sortee.org){target="_blank"}.
+
+We meet every month to learn, share, and improve our coding skills.
+Whether you're debugging your first R script or building a Shiny app,
+there's a place for you here.
+
+We cover:
+
+- 🐍 R and Python for ecological data analysis
+- 📊 Data visualisation with ggplot2 and beyond
+- 🔁 Reproducible workflows with Quarto and RMarkdown
+- 🌐 Open science tools: OSF, GitHub, Zenodo
+
+:::
+
+
+:::
+
+
+
+
+
+## A Little Reproducible Science 🔬
+
+The plot below is generated from R code embedded directly in this page — this is what makes Quarto powerful!
+
+
+```{r}
+#| label: demo-plot
+#| echo: true                # show the code (overrides global echo: false)
+#| fig-cap: "Simulated species richness across a precipitation gradient"
+#| fig-alt: "Scatter plot showing a positive relationship between precipitation and species richness"
+#| fig-width: 7
+#| fig-height: 4
+
+library(ggplot2)
+
+set.seed(42)
+n <- 80
+data <- data.frame(precipitation_mm = runif(n, 200, 1800),
+                   temperature_c    = runif(n, 5, 30))
+
+data$species_richness <- round(0.05 * data$precipitation_mm - 0.8  * data$temperature_c +
+                                 rnorm(n, 0, 8) + 20)
+
+ggplot(data, aes(x = precipitation_mm, y = species_richness, colour = temperature_c)) +
+  geom_point(alpha = 0.7, size = 2.5) +
+  geom_smooth(method = "lm", se = TRUE) +
+  scale_colour_gradient(low = "#2C9B8A", high = "#E07B39",
+                        name = "Temperature (°C)") +
+  labs(x = "Annual precipitation (mm)",
+       y = "Species richness",
+       caption = "Simulated data for demonstration") +
+  theme_bw(base_size = 12)
+```
+
+
+## Get Involved
+
+<!-- TABSET
+     Great for organising related content without a long scroll.
+     Each ### heading becomes a tab label.                        -->
+
+::: {.panel-tabset}
+
+### 🎤 Volunteer to Present
+
+We're always looking for people to share their coding knowledge —
+beginners welcome! You could run a:
+
+- **Tutorial** (30–45 min): teach a skill you've recently learned
+- **Code review** (20 min): share a workflow for group feedback
+- **Demo** (10 min): show a package or tool you like
+
+[Express interest →](mailto:codeclub@sortee.org){.btn .btn-outline-primary}
+
+### 🛠 Suggest a Topic
+
+Missing something from our schedule?
+Tell us what you'd like to learn.
+
+Current wishlist:
+
+1. Bayesian statistics in R (Stan / brms)
+2. Spatial data with `sf` and `terra`
+3. Machine learning for ecologists
+4. Python for R users
+
+[Open an issue on GitHub →](https://github.com/SORTEE/CodeClub/issues){.btn .btn-outline-secondary}
+
+:::
+
+---
+
+*SORTEE Code Club is a volunteer-run community committed to a welcoming,
+inclusive environment for all skill levels.
+Read our [Code of Conduct](https://sortee.org/codeofconduct/).*

@@ -1,0 +1,91 @@
+---
+title: "Learning Resources"
+subtitle: "Curated links for reproducible research in R and beyond"
+
+title-block-banner: true
+
+toc: true
+toc-depth: 2
+toc-title: "Jump to"
+---
+
+
+## Getting Started with R
+
+- [**R for Data Science (2e)**](https://r4ds.hadley.nz)
+- [**SORTEE Resources Hub**](https://sortee.org/other_resources/)
+- [**Posit Cheatsheets**](https://posit.co/resources/cheatsheets/)
+
+## Reproducible Research & Quarto
+
+- [**Quarto Documentation**](https://quarto.org/docs/)
+- [**Awesome Quarto**](https://github.com/mcanouil/awesome-quarto)
+- [**The Turing Way**](https://the-turing-way.netlify.app) 
+- [**Happy Git and GitHub for the useR**](https://happygitwithr.com)
+
+::: {.callout-warning}
+## On using AI assistants for code
+AI tools can speed up your coding but also confidently produce incorrect results.
+Always test AI-generated code on data you understand before using it in real analyses.
+:::
+
+## Quarto Website Resources
+
+- [**Publish your Quarto website with Github Pages**](https://quarto.org/docs/publishing/github-pages.html)
+- [**Everything about navbars, sidebars, footers**](quarto.org/docs/websites/website-navigation.html)
+- [**About page templates**](quarto.org/docs/websites/website-about.html)
+- [**Do you want a blog?**](quarto.org/docs/websites/website-blog.html)
+- [**The theme gallery**](quarto.org/docs/output-formats/html-themes.html)
+
+### ... for the adventurous!
+
+Do you want to customise your layout? You need `.scss`!
+
+Sass is the name of the tool, SCSS is the syntax we use.
+When you search for resources you'll find both names used interchangeably, and that's fine. The one thing to watch out for: if an example you find doesn't use curly braces `{}` and semicolons `;`, it's using the older Sass syntax — you can usually just add curly braces and semicolons to make it work as SCSS. Look at the example below!
+
+::: {.panel-tabset}
+
+### **Sass**
+
+```sass
+$primary: #2A7F62
+
+nav
+  background: $primary
+```
+
+### **scss**
+
+```scss
+$primary: #2A7F62;
+
+nav {
+  background: $primary;
+}
+```
+
+:::
+
+- [**Quarto guide on customising**](quarto.org/docs/output-formats/html-themes.html#customizing-themes)
+- [**Sass Basics**](https://sass-lang.com/guide/)
+- [**CSS with SCSS - Youtube**](https://www.youtube.com/watch?v=ZzfMJK5mSvs)
+- [**HTML and CSS for absolute beginners - Youtube**](https://www.youtube.com/watch?v=1L2YiWdaUDM)
+
+## Website made in Quarto by SORTEE Members
+
+Before copying code from GitHub, always check the LICENSE of the repo!
+
+| Website | Github Repo | 
+|---------|---------------|
+| [Cecilia Baldoni](https://cecibaldoni.github.io/) | [Website Github](https://github.com/cecibaldoni/cecibaldoni.github.io) | 
+
+<br>
+***~ COMING SOON ~***
+<br>
+
+---
+
+*Resource suggestions welcome! Open an
+[issue on GitHub](https://github.com/SORTEE/CodeClub/issues)
+or message us on Slack.*

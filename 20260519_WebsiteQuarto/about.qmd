@@ -1,0 +1,52 @@
+---
+title: "About SORTEE Code Club"
+title-block-banner: true
+
+---
+
+## Our Mission
+
+SORTEE Code Club runs free, community-led coding sessions for researchers
+in ecology and evolutionary biology. We aim to:
+
+1. **Lower the barrier** to reproducible research practices
+2. **Build community** across institutions and career stages
+3. **Share knowledge** openly — all materials are CC-licensed
+4. **Support SORTEE's mission** of more open, reliable, transparent research
+
+
+## How Sessions Work
+
+We meet online every third Tuesday of the month. We host two types of sessions:
+
+- **Training Sessions**: Learn new coding skills, packages, models, and tools that support open science.
+- **Hacky Hours**: Casual peer-to-peer sessions for code review, troubleshooting, and sharing tips and tricks.
+
+[Check the full Code Club schedule](https://docs.google.com/spreadsheets/d/1rOOOE7ghPduwtFftG0DJJf0DXVigAdcmQ0xdEwbKQXo/edit?gid=1314818073#gid=1314818073)
+
+::: {.callout-tip}
+## First time? Here's what to expect
+
+Sessions are informal and collaborative. There's no such thing as a silly
+question. The presenter shares their screen, you follow along, and we all
+learn together.
+:::
+
+| Time | What happens |
+|------|-------------|
+| 0:00 | Welcome, housekeeping (5 min) |
+| 0:05 | Main tutorial / demo (40 min) |
+| 0:45 | Open Q&A + troubleshooting (10 min) |
+| 0:55 | Wrap up, next session preview (5 min) |
+
+Sessions are held on **Zoom**. Links are distributed via Slack
+one week and again one hour before the session.
+
+
+## Acknowledgements
+
+::: {.callout-note appearance="minimal"}
+SORTEE Code Club is an entirely volunteer effort. We are grateful to all
+[SORTEE](https://www.sortee.org) members
+who have shared their knowledge.
+:::

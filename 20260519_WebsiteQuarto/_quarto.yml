@@ -1,0 +1,103 @@
+# WHAT IS THIS FILE?
+# This is the single configuration file Quarto looks for automatically in the root of your project. 
+# This means you cannot rename it!
+# Here you can set all the settings for your website; if you change something here, it affects the ENTIRE site instantly on next render
+
+# PROJECT TYPE
+project:
+  type: website         # other options: book, default (single doc)
+  output-dir: _site     # where rendered HTML goes (add _site to .gitignore!)
+## Alternative:
+# output-dir: docs    # use this if deploying via GitHub Pages
+                        # "main branch / docs folder" option instead of gh-pages.
+                        # If you switch to docs/:
+                        #   1. change output-dir to docs here
+                        #   2. run quarto render — this creates the docs/ folder
+                        #   3. commit and push the docs/ folder
+                        #   4. go to Settings → Pages → Source → main / docs
+                        # Note: unlike gh-pages, you must commit the rendered HTML yourself.
+                        #       Add _site/ to .gitignore but leave docs/ unignored.
+
+
+# WEBSITE SETTINGS
+
+website:
+  title: "SORTEE Code Club"   # shown in browser tab + navbar brand
+
+  # --- TOP NAVIGATION BAR ---
+  navbar:
+    background: primary       # uses the theme's primary colour automatically
+
+    left:  # items aligned to LEFT side of navbar
+      - href: index.qmd       # MUST match the filename exactly
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: resources.qmd
+        text: Resources
+
+    right: # great for icon links, but you can swap them!
+      - icon: github          # Bootstrap Icons name (without "bi-" prefix)
+        # full list: icons.getbootstrap.com
+        href: https://github.com/sortee
+        aria-label: GitHub    # always add for icon-only links (accessibility)
+
+# PAGE FOOTER
+  page-footer:
+    background: dark
+    left: |
+      © 2024 SORTEE Code Club · [sortee.org](https://www.sortee.org)
+    center: "Built with ❤️ and [Quarto](https://quarto.org)"
+    right:
+      - icon: github
+        href: https://github.com/sortee
+        aria-label: GitHub
+
+# SITE METADATA
+  site-url: https://sortee.github.io/code-club   # ← CHANGE after first publish
+  description: >
+    A community for ecologists and evolutionary biologists who want
+    to write better, more reproducible code. Bi-weekly sessions, open to all.
+
+# SEARCH
+  search:
+    location: navbar
+    type: overlay       # pops up a search modal — works on static sites, no server needed
+
+
+# FORMAT — HTML output options applied to EVERY page
+
+format:
+  html:
+    # THEME: Here I'm using "flatly", which is one of Quarto's built-in Bootstrap themes.
+    
+    # Full list: quarto.org/docs/output-formats/html-themes.html
+    theme: flatly
+
+    # Ready to customise colours and fonts? Add a SCSS file on top:
+    # theme: [flatly, styles.scss]
+
+# TABLE OF CONTENTS
+    toc: true                 # show TOC on every page
+    toc-depth: 3
+    toc-title: "On this page" # This is the default
+
+# SMOOTH SCROLLING
+    smooth-scroll: true
+
+# EXTERNAL LINKS
+    link-external-icon: true        # adds ↗ icon next to links leaving the site
+    link-external-newwindow: true   # external links open in a new tab, so visitors do not leave your site!
+
+# CODE BLOCKS
+    highlight-style: github
+    code-copy: true           # adds a copy button to every code block
+
+
+# EXECUTE — controls how code chunks run across the whole site
+
+execute:
+  echo: false       # hide code by default; override per chunk with #| echo: true
+  warning: false
+  message: false
+  freeze: auto      # only re-run chunks if source changed — keeps renders fast
