@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>So you want to make a Shiny app…</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ed Ivimey-Cook" />
+    <meta name="date" content="2025-06-17" />
+    <script src="SHinyTutorial_files/header-attrs-2.29/header-attrs.js"></script>
+    <link href="SHinyTutorial_files/remark-css-0.0.1/robot.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# So you want to make a Shiny app…
+]
+.author[
+### Ed Ivimey-Cook
+]
+.date[
+### June 17, 2025
+]
+
+---
+
+
+
+## Getting started
+This has a really good tutorial - alot of what I've learnt (and will show) came from this website:
+&lt;br&gt;
+  - https://shiny.rstudio.com/tutorial/
+&lt;br&gt; 
+  - https://shiny.rstudio.com/gallery/
+&lt;br&gt;
+&lt;br&gt;
+**There are a tonne of examples built into the Shiny package - runExample() is used to run them.**
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+Some nice examples of Shiny apps (maybe not the first one):
+&lt;br&gt;
+&lt;br&gt;
+  - **metRscreen**:  https://github.com/EIvimeyCook/metRscreen &lt;br&gt;
+  - **shinyDigitise**:  https://github.com/EIvimeyCook/shinyDigitise &lt;br&gt;
+  - **infinitylists**:  https://unsw.shinyapps.io/infinitylists/ &lt;br&gt;
+  - **Esquisse**: http://shinyapps.dreamrs.fr/esquisse/ &lt;br&gt;
+  - **ShinyStan**: http://mc-stan.org/shinystan/ &lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&gt;**_DISCLAIMER_:** I am by no means an expert - this will just teach you how to get started making apps with Shiny :)
+
+---
+
+## Useful Packages
+
+This is just a list with some useful packages that I've come across during my travels in Shiny:
+&lt;br&gt;
+- **ShinyWidgets:** For nice buttons/switches/alerts and dropdown menus! (https://github.com/dreamRs/shinyWidgets) &lt;br&gt;
+- **ShinyDashboard:** To create nice dashboard like shiny apps! (https://rstudio.github.io/shinydashboard/index.html) &lt;br&gt;
+- **ShinyThemes:** To change the overall appearance of your shiny app! (https://rstudio.github.io/shinythemes/) &lt;br&gt;
+- **ShinyAlerts:** More popups and alert styles! (https://github.com/daattali/shinyalert) &lt;br&gt; 
+- **ShinyJS:** Lots of useful functions to help the user experience! (https://deanattali.com/shinyjs/overview) &lt;br&gt;
+- **ShinySemantic/ShinySky:** More stylish shiny functions! (https://github.com/Appsilon/shiny.semantic/ + https://github.com/AnalytixWare/ShinySky) &lt;br&gt;
+- **rintrojs:** Useful functions that help with producing an intro and guidance to your shiny app (https://carlganz.github.io/rintrojs/index.html) &lt;br&gt;
+- **ShinyTest:** Useful package to help test your shinyApp (https://rstudio.github.io/shinytest/) &lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+**This GitHub list is amazing** https://github.com/nanxstats/awesome-shiny-extensions
+
+---
+
+## Building your first app
+
+A shiny app consists of three main parts:
+&lt;br&gt;
+&lt;br&gt;
+- The "UI" or user-interface and appearance part of your app, which tells R how you want things to look.&lt;br&gt;
+- The "Server" or logic part of your app - which tells R how you want things to work.&lt;br&gt;
+- The call to "shinyApp" or the part to tell R which file is which.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&gt;**_Tip_:** You can have the UI and Server part of a shiny app in the same file, or in seperate files. 
+&lt;br&gt;
+&lt;br&gt;
+You just need to specify where these are located when you come to build the app, you can then run your app with runApp("FilePath").
+&lt;br&gt;
+&lt;br&gt;
+Just remember to give each App its own working directory.
+
+
+---
+## The UI
+
+Let's take a look at a simple Shiny App. 
+&lt;br&gt;
+&lt;br&gt;
+https://github.com/rstudio/shiny-examples/tree/main/082-word-cloud
+&lt;br&gt;
+&gt;**_Tip_:** to show your code alongside your app, add the display.mode = show case call into the runApp function.
+
+- The UI typically starts with the fluidpage() argument. There are other variants (such as shinyDashboard) but this just sets up the page to consist of rows and columns. You place elements within this argument to add it to your app. You can make this more complicated by specifically referring to columns or rows using the fluidrow/column arguments.
+&lt;br&gt;
+&lt;br&gt;
+- This is where you can specify what you want for certain elements such as your app having a title = **"titlePanel"**; having a sidebar - **"sidebarLayout"** followed by the various parts that you want the sidebar to contain - **"sidebarPanel"**; and what you want your main part of your app to contain **"mainPanel"**.
+
+&gt;**_Tip_:** to change font size or style, Shiny takes html coding such as h1 or strong.
+
+---
+## The UI - continued
+
+Points to note here:
+&lt;br&gt;
+&lt;br&gt;
+- If you want parts of the app that can have various input then you need to specify where/what they look like. For instance **"selectInput"** (gives a dropdown menu) and **"sliderInput"** (gives an adjustable slider) or **"actionButton"** (creates a button that will link to a specific server action). 
+&lt;br&gt;
+- In each case, these are associated with a server name and a label. The server name will be used internally, whereas the label will be used directly in the UI.
+&lt;br&gt;
+- In some cases, we have to specify the range of values an input can take - such as the "choices" option or the length of the slider.
+&lt;br&gt;
+
+---
+
+## The UI - continued
+
+- The main plot here is plotting an output in response to your input via the sliders and selection - **"plotOutput"** is the function. The server call is for the "plot" object.
+&lt;br&gt;
+- Shiny also comes with a bunch of built in widgets such as **"submitButton"** or **"checkboxInput"**
+&lt;br&gt;
+&gt;**_Tip_:** 
+ - hr() or br() adds a blank horizontal row to your ui, which provides space between widgets. &lt;br&gt;
+ - Other useful inputs are **"textInput"** - which allows you to add text.&lt;br&gt;
+ - Calls to other packages typically go just below the fluidPage call at the start - for instance **"useShinyalert()"**.
+
+---
+## The Server
+
+- I find the server to be the trickiest part. It's all to do with logic and processes that happen behind the scenes that then get tranlsated onto the UI.
+&lt;br&gt;
+- Bascially anything that happens in the UI that you want someone to interact or to update - requires some server logic behind it. 
+&lt;br&gt;
+
+---
+## The Server Again 
+**Again let's have another look at the app. **
+&lt;br&gt;
+- The server function starts off with a top part containing **"input"**, **"output"** and **"session"**. This essentially tell R that your app requires user input, which will then turn into an output. 
+&lt;br&gt;
+- The call to session here (optional) simply allows R to create a temporary environment where variables and functionality are only related to that Shiny instance. Common uses are tiggering a function once the user has begun or ended a session or customising the app to the device that a user is on.
+&lt;br&gt;
+- More specifically here, a reactive expression is an expresssion that takes inputs from widgets and then returns an output. 
+&lt;br&gt;
+- For instance here, you call the action button "change" which when pressed, creates a matrix of all the terms behind the scenes and converts this to a plot (given with the renderPlot function). This also takes variosu inputs fromthe sliders.
+
+&gt;**_Tip_:** The repeatable function here is the same as setting seed - you will get the same output everytime.
+
+---
+## MoRe ServR
+
+- Let's take a look at some of the metRscreen code and a simple action button demo:
+&lt;br&gt;
+https://github.com/EIvimeyCook/metRscreen/tree/master/inst/metRscreen
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+- Alot of the useful functions are created outside of the server and UI
+&lt;br&gt;
+- Again I used a lot of reactive values - so widgets and data is updated based on the csv file that is uploaded. 
+&lt;br&gt;
+- observeEvent  and eventReactive are similar functions that return slightly diffferent objects. Use observeEvent whenever you want to perform an action in response to an event. Use eventReactive to create a calculated value that only updates in response to an event. 
+&lt;br&gt;
+- In this case i want the counter to move on one when a button is pressed - or return an error message if zero is selected. 
+&lt;br&gt;
+- This then subsets the dataframe to match the counter and then display the appropriate data (**"renderUI"**).
+
+---
+## Sharing your app
+**Several options: **
+- Sharing the actual script.
+&lt;br&gt;
+- Upload the script to Github. Users can then run it with runGitHub( "&lt;your repository name&gt;", "&lt;your user name&gt;")
+&lt;br&gt;
+- Upload to shinyapps.io. This uses the rsconnect library. You will need to copy token info from your shinyapps.io account.
+
+
+---
+## Any questions?
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

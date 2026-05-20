@@ -1,0 +1,345 @@
+---
+title: "How to Start Your Own Code Club"
+author: "Cecilia Baldoni, Saoirse Kelleher, Natalie van Dis, Corné de Groot"
+event: SORTEE Conference 2025 — Unconference Session 5
+date: 16/10/2025
+format: 
+  html:
+    self-contained: true
+    toc: true
+---
+
+## **Introduction**
+
+This guide was born out of the SORTEE 2025 unconference session “*How to Start Your Own Code Club*”. During the event, participants came together to share their experiences, questions, challenges, and creative ideas about *building communities of practice around coding*. 
+
+Many contributors were people already running a Code Club, others were planning to start one, and some simply joined out of curiosity to learn from others. The discussion materials were collected in a shared online document, later used as the foundation for this collaboratively written guide. What follows is a synthesis of collective contributions: participant statements, experiences, well-tested strategies, and answers to common challenges. The result is a guide created *by the community*, *for the community*.
+
+This guide aims to document that collective experience and present practical advice for anyone interested in cultivating a learning community around coding.
+
+## **What Is a Code Club?**
+
+At its heart, a Code Club is a peer-learning community where people come together to improve their coding skills, share reproducible practices, and learn without judgment. It is both a safe space for exploration and a structured way to maintain regular coding practice in good company.
+
+### Shared Learning and Skill Development
+
+Focus on learning from one another and improving overall coding abilities through collaboration.
+
+-   “Peer-to-peer learning of (open) coding skills”
+-   “A place to learn new things”
+-   “Community of practice to learn + share skills”
+
+**Core idea**: a Code Club is a learning community where everyone teaches and learns.
+
+### Improving Code Quality and Reproducibility
+
+Emphasis on writing better, more transparent, and more reliable code.
+
+-   “Prevent unintentional errors”
+-   “Learning and discussing code to minimise errors and develop best practices”
+-   “A safe place to discuss coding and how to make it more reproducible”
+
+**Core idea**: Code clubs exist to strengthen reproducibility and good practices collectively.
+
+### Dedicated, Supportive Time and Space
+
+Highlighting the intentional act of setting aside space for coding together.
+
+-   “Allocated time to discuss coding, resolving issues and improving coding”
+-   “A place where you can discuss coding techniques and skills without judgment”
+
+**Core idea**: a Code Club gives people a protected, inclusive time for shared coding and problem-solving.
+
+### Collaboration and Enjoyment
+
+Acknowledging the social and motivational side — learning through doing, creativity, and fun.
+
+-   “Place to work on separate code problems in the community or work on fun challenges together”
+
+**Core idea**: coding becomes more motivating and enjoyable when done collectively and informally.
+
+A key observation from these inputs is that no one defined a Code Club by its format, but they defined it by its purpose. In practice, Code Clubs can be online, in-person, or hybrid; large or small; formal or informal. The unifying idea is that a Code Club provides dedicated time and an inclusive atmosphere for continued coding practice and shared learning.
+
+> **Important to remember**
+>
+> All the cool kids join code clubs 😎
+
+## **Format and Frequency**
+
+There is no single correct way to run a Code Club. **What matters most is consistency** and an approach that fits the people involved. During the unconference, participants described several ways they organise, or would like to organise, their clubs:
+
+-   Weekly or biweekly meetings for ongoing support and continuity.
+-   Monthly sessions that balance preparation time with participation energy.
+-   Occasional workshops or annual events that bring broader groups together.
+
+Across all of these forms, three practices stood out as particularly effective:
+
+-   Keep groups small and steady (around 5–15 people). A consistent core helps build familiarity and community over time.
+-   Choose an accessible format. Online or hybrid meetings work well for people who cannot always attend in person.
+-   Share the organising role. Rotating leadership keeps the workload manageable and encourages distributed ownership.
+
+These patterns illustrate that how often or where the club meets is less important than creating a predictable rhythm and a space people enjoy returning to.
+
+::: {.callout-note title="Participant Tip"}
+In-person participants are usually more engaged, because less temptation to do something else in the background
+:::
+
+## **Session Types**
+
+This section describes different formats a Code Club can structure its meetings. During the unconference, facilitators proposed three core formats (seminar-style talks, hands-on workshops, and hacky hours), while participants added additional creative options such as book and journal clubs or short show-and-tell sessions.
+
+Each format supports a different kind of learning. Choosing a mix of them helps keep the community dynamic, inclusive, and engaging.
+
+### Seminar‑Style Talks
+
+Structured around short talks or demonstrations, these sessions are a good fit for sharing conceptual knowledge and introducing big-picture ideas.
+
+*Good for*:
+
+-   Explaining the theoretical background or principles of reproducible research.
+-   Delivering visual or figure-based explanations.
+-   Reaching a broad audience.
+
+*Considerations*:
+
+-   Requires the most preparation and planning.
+-   Beginners may find them harder to follow if the content is advanced.
+-   Discussion needs to be actively encouraged to keep engagement high.
+
+::: {.callout-note title="Participant Tip"}
+Seminar-style sessions are great for more maths/stats type talks that don’t really work for workshops
+:::
+
+### Hands‑On Workshops
+
+Interactive sessions where everyone codes along. These take more preparation but allow deep learning through doing.
+
+*Good for*:
+
+-   Building practical skills and learning new tools together.
+-   Encouraging active participation from all attendees.
+
+*Considerations*:
+
+-   Sessions often take longer than expected.
+-   Different coding languages or skill levels can complicate pacing.
+-   Flexibility is key — it’s fine if not everyone finishes the materials.
+
+::: {.callout-tip title="Facilitator Tip"}
+“You need to be super flexible: some things take a lot longer than you think, you might have weird dependency issues, etc. It's important to be ready to adapt if needed, and be okay with not necessarily getting to the end of the materials.”
+:::
+
+### Hacky Hours
+
+Informal, collaborative sessions focusing on solving problems or exploring ideas together. They require minimal preparation and emphasise community support.
+
+*Good for*:
+
+-   Discussing code challenges or research-specific issues.
+-   Peer troubleshooting and spontaneous advice-sharing.
+-   Strengthening connections across skill levels.
+
+*Considerations*:
+
+-   Facilitation still matters; a clear start helps participants feel comfortable.
+-   Some people may feel self-conscious about sharing unfinished code.
+-   Beginners benefit from small demos or examples to focus the discussion.
+
+::: {.callout-tip title="Facilitator Tip"}
+“Beginners often don’t know what questions to ask. One suggestion is to start by showing something (small demo) you’re working on to give a starting point.”
+:::
+
+> **Important to remember**
+>
+> “Hacky Hours are great for creating engagement, and showing that at every level of coding experience mistakes are common ❤️×100.”
+
+### Other Formats Ideas
+
+Participants also suggested additional lightweight options that make meetings more varied and inclusive.
+
+-   *Book Clubs* — follow a single book over an extended period, reading chapter by chapter. They work well as a recurring theme for the year and provide a strong structure for regular meetings. Examples mentioned included Statistical Rethinking, R for Data Science, and Hands‑On Programming with R.
+-   *Journal Clubs* — focus on papers, preprints, or tutorials chosen for a session. These require less planning and can respond to current community interests or new methods.
+-   *Show‑and‑Tell Sessions* — short rounds (5-10 minutes) where each participant presents a favourite package, workflow, or function. Quick to organise and highly interactive, they build confidence and spark conversation across experience levels.
+
+## **Common Challenges and Solutions**
+
+Every Code Club will face its own mix of organisational and interpersonal challenges. During the unconference, participants contributed several recurring themes and shared practical ways to address them. The following section compiles those common issues and the strategies that have helped others keep their Code Clubs sustainable, accessible, and enjoyable.
+
+### Finding Ideas for Sessions
+
+*Challenges*:
+
+-   Running out of topics.
+-   Not knowing participants’ skill levels or current interests.
+-   Balancing multiple coding languages (R vs Python).
+
+*Solutions*:
+
+-   Collect topic suggestions during the first session or through anonymous feedback forms.
+-   Ask participants to vote on themes or rank potential ideas.
+-   Plan sessions around topics you personally want to learn.
+-   Mix language‑neutral themes such as version control, project organisation, or using Quarto.
+
+::: {.callout-tip title="Facilitator Tip"}
+“Think of people, not just topics — invite those in your network who love teaching or can share practical experience.”
+:::
+
+### Balancing Skill Levels
+
+*Challenges*:
+
+-   Beginners can feel lost, while advanced users may become disengaged.
+-   Participants may hesitate to ask questions or feel intimidated by others’ expertise.
+
+*Solutions*:
+
+-   Alternate introductory and advanced sessions so everyone periodically feels comfortable.
+-   Use breakout rooms or small groups that mix experience levels.
+-   Encourage experienced attendees to mentor newer ones, teaching reinforces their own understanding.
+-   Have a session on how to vibe code / use AI Chatbots to code
+
+::: {.callout-tip title="Facilitator Tip"}
+“Even experienced coders weren’t taught all the basics, reviewing them benefits everyone!”\
+\
+"Think that even if you are proficient with a tool or a language, there’s always new, or more efficient, or slightly different ways of solving a problem!"
+:::
+
+### Managing Workload and Consistency
+
+*Challenges*:
+
+-   Sustaining energy and motivation over time.
+-   Finding time to prepare materials.
+-   Balancing Code Club duties with other responsibilities.
+
+*Solutions*:
+
+-   Share responsibilities with other organisers!
+-   Rotate hosts for variety and capacity-sharing (e.g., alternating between PhD students and postdocs).
+-   Reuse existing materials; foundational workshops (Git, plotting, data manipulation) remain relevant year after year.
+-   Use publicly available tutorials such as Happy Git with R or the SORTEE Code Club resources (see list of resources below).
+
+### Addressing Imposter Syndrome and Low Turnout
+
+*Challenges*:
+
+-   Feeling unqualified to lead.
+-   The fear of making mistakes publicly.
+-   Sessions with low attendance or quiet participation.
+
+::: {.callout-tip title="Facilitator Tip"}
+"Feel the fear, and DO IT ANYWAY!"
+:::
+
+*Solutions*:
+
+-   Normalise imperfection — live coding helps participants see that everyone makes mistakes.
+-   Start small and consistent; even a small group can grow into a stable community.
+-   Encourage senior researchers to model openness about their own uncertainties.
+-   Make people feel valued part of the code club. They don’t have to present or ask questions, but know that it’s a safe place where no judgment takes place!
+
+::: {.callout-tip title="Facilitator Tip"}
+“Say out loud when you’re unsure. Everyone relates, and it breaks the ice.”
+:::
+
+## **Getting Started: Steps You Can Try Tomorrow**
+
+Getting a Code Club off the ground can feel overwhelming, but you don’t have to have everything figured out before your first session. The ideas below came straight from participants and facilitators who have joined or built Code Clubs Communities and know what helps a group grow. These advices focuses on practical and low‑barrier steps, encouraging you to start with what you have and build momentum as you go.
+
+You don’t need to wait for the right moment. Just start and experiment!
+
+**💡 1. Be Consistent**
+
+-   Choose a regular meeting time and space and *stick to it*. Consistency helps the community form, even if only a few people attend at first.
+-   Embed sessions into an existing routine, such as right after lab meetings or during lunch breaks.
+
+**💡 2. Make It Easy to Join**
+
+-   Schedule sessions at accessible times.
+-   Online or hybrid participation works well for people with limited mobility or packed schedules.
+-   Emphasise that participants can come when they can — low‑pressure involvement helps retention.
+
+**💡 3. Keep It Safe and Welcoming**
+
+-   Remind everyone that not knowing something is fine; learning together is the goal.
+-   Draft a `Code of Conduct` early, ideally during the first meeting, so the group defines its own norms.
+-   Be explicit that mistakes are part of learning: kindness and respect come first.
+
+**💡 4. Keep It Engaging**
+
+-   Focus on community first: belonging leads to sustained participation.
+-   Experiment with different formats: seminars, hacky hours, or short themed sessions.
+-   Regularly ask participants to vote or comment on upcoming topics.
+-   Your participants are also your co-leads! Encourage anyone to show a tool, share a trick, or guide a session. Shared responsibility strengthens engagement and helps the club stay active without depending on a single organiser.
+
+**💡 5. Start Small and Iterate**
+
+-   Invite a few labmates or colleagues to try a first session; it doesn’t need to be perfect.
+-   Watch a short tutorial or read a paper together and talk about it.
+-   Build from there as participation and confidence grow.
+
+::: {.callout-tip title="Facilitator Tip"}
+“Start small! Ask your lab members, or your grad cohort, if they would be interested in a get‑together. You can watch the same tutorials or read the same paper and comment together!”
+:::
+
+## **Resources and Inspiration**
+
+This section gathers all materials, platforms, and examples mentioned by participants throughout the session.\
+They can serve both as inspiration for new clubs and as ready‑to‑use teaching materials.
+
+Papers and References
+
+-   [Ten Simple Rules to Increase Computational Skills Among Biologists with Code Clubs ](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008119)(PLOS Computational Biology).
+-   [Notes on organising local open science meet‑ups and Code Clubs](https://sortee.org/blog/2024/10/08/2024_codeclub_09/) (SORTEE blog).
+
+Code Club Materials and Topic Ideas
+
+-   [SORTEE Code Club GitHub Repository](https://github.com/SORTEE/CodeClub)
+-   [Happy Git with R](https://happygitwithr.com/)
+-   [BRMS Tutorials](https://paulbuerkner.com/brms/articles/)
+-   [EMBL Coding Club Curated Tutorials](https://xn--bioit-iu3b.embl.de/Coding%20Club/Curated%20Tutorials/)
+-   [Raspberry Pi Foundation Projects](https://projects.raspberrypi.org/en)
+
+Tools for Community and Collaboration
+
+-   Google Docs – collect topics or session feedback.
+-   [HedgeDoc](https://hedgedoc.org/) - for real-time collaboration in markdown
+-   GitHub – share and version session materials.
+-   Slido – quick polls or interactive questions during online sessions.
+
+These links reflect the spirit of Code Clubs: open, reusable, and continually evolving with every new contribution.
+
+## **Acknowledgements**
+
+This guide exists thanks to the generous energy and creativity of everyone who took part in the SORTEE 2025 Unconference Session “How to Start Your Own Code Club.”\
+Cecilia Baldoni,  Saoirse Kelleher,  Natalie van Dis,  and Corné de Groot created the original collaborative document that became the foundation for this work.
+
+Every idea, emoji reaction, and link shared helped turn the discussion into this reusable community guide.
+
+We hope this guide continues to grow and improve through collective effort, so it can help make Code Clubs more open, welcoming, and sustainable wherever you are. Your voice matters: add what you learn, revisit what you read here, and help the next cohort of Code Club leaders get started just a little more easily.
+
+## **How to Contribute**
+
+We warmly welcome contributions from anyone interested in helping improve this guide.
+
+**Ways to contribute**:
+
+-   **Pull Request**: Propose edits or new sections by forking the [GitHub repository](https://github.com/SORTEE/CodeClub/tree/main) and submitting a `Pull Request`. For clarity and fast review, please describe the purpose of your change clearly in the PR description. Here you can see the repo structure:
+
+```         
+📁 20250318_decode-the-code/
+📁 20250415_reproducible-coding/
+📁 20250520_notebook-to-paper/
+...
+📁 20251016_SORTEE-Unconference5-CodeClub/
+ ├── guide/                             ← This guide's source files
+ │    ├── how-to-start-a-code-club.qmd  ← Main Quarto Markdown source
+ │    ├── style.scss                    ← SCSS file for custom styling
+ ├── slides/                            ← Slides from unconference session
+ └── facilitator-guide/                 ← Internal docs for facilitators for the unconference
+```
+
+-   **Open an issue**: Spot a typo, confusing wording, or missing topic? Open an `issue` to the [GitHub repository](https://github.com/SORTEE/CodeClub/tree/main) to discuss it before making changes, or to suggest new ideas and resources.
+-   You’re encouraged to reuse and customize this guide for your own lab, community, or institution. Please include credit to [SORTEE](https://sortee.org/) and the original contributors.
+
+Respect the [SORTEE code of conduct](https://sortee.org/codeofconduct/) to maintain an open, inclusive, and supportive environment.

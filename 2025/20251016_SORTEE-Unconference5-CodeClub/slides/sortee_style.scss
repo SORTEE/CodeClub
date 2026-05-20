@@ -1,0 +1,79 @@
+/*-- scss:defaults --*/
+
+// Import fonts from Google
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Font Variable
+$font-family-sans-serif: "Inter", sans-serif !default;
+$font-family-monospace: "Space Mono", monospace !default;
+
+// Base Colors
+$body-bg: #f0f1eb !default;
+$body-color: #0A5400 !default;
+$link-color: #A88281 !default;
+
+// Heading Settings
+$presentation-heading-font: $font-family-monospace !default;
+$presentation-heading-color: #094b00 !default;
+
+/*-- scss:rules --*/
+
+// Apply base fonts globally
+.reveal {
+  font-family: $font-family-monospace;
+  line-height: 1.5em;
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+// Heading styles
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: $presentation-heading-font;
+  color: $presentation-heading-color;
+  font-weight: 700; // bold for headings
+  margin-bottom: 1em;
+}
+
+.reveal p {
+  font-size: 1em; 
+}
+
+// Link style adjustments
+.reveal a {
+  color: $link-color;
+  line-height: 1.3em;
+  text-decoration: underline;
+}
+
+.reveal .slide-logo {
+   max-height: 2.5em !important;
+}
+
+.reveal .footer,
+.reveal blockquote {
+   color: #0C4A6E;
+   border-left: 5px solid #E0F2FE
+}
+
+.centered {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.code {
+  background-color: #E0F2FE !important;
+  color: #0C4A6E !important;
+}
+
+.smaller-font {
+  font-size: 0.8em; 
+}

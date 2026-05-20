@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "How to Start Your Own Code Club"
+  site-url: https://sortee.github.io/CodeClub/20251016_SORTEE-Unconference5-CodeClub/guide/
+  page-navigation: true
+  sidebar: false
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    self-contained: true
+    theme: style.scss

@@ -1,0 +1,23 @@
+
+Call:
+lm(formula = bill_length_mm ~ bill_depth_mm + species + sex, 
+    data = penguins_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.1344 -1.2052 -0.0056  1.2543 10.9430 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       27.6224     2.6718  10.339  < 2e-16 ***
+bill_depth_mm      0.5317     0.1513   3.514 0.000504 ***
+speciesChinstrap   9.9709     0.3357  29.699  < 2e-16 ***
+speciesGentoo     10.4890     0.5828  17.999  < 2e-16 ***
+sexmale            2.8938     0.3385   8.548 4.82e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.286 on 328 degrees of freedom
+Multiple R-squared:  0.8274,	Adjusted R-squared:  0.8253 
+F-statistic: 393.2 on 4 and 328 DF,  p-value: < 2.2e-16
+

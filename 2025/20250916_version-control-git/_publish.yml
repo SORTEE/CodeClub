@@ -1,0 +1,4 @@
+- source: version-control-presentation.qmd
+  quarto-pub:
+    - id: 0e47b55d-e53a-4962-804e-98c795715379
+      url: https://cecibaldoni.quarto.pub/version-control
