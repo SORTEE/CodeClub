@@ -79,6 +79,9 @@ Before copying code from GitHub, always check the LICENSE of the repo!
 | Website | Github Repo | 
 |---------|---------------|
 | [Cecilia Baldoni](https://cecibaldoni.github.io/) | [Website Github](https://github.com/cecibaldoni/cecibaldoni.github.io) | 
+| [Juliette Tariel-Adam](https://juliettetarieladam.github.io/) | [Website Github](https://github.com/JulietteTarielAdam/juliettetarieladam.github.io) |
+| [Ruby Krasnow](https://ruby.science/) | [Website Github](https://github.com/rmk118/rmk118.github.io) |
+| [OTHER EXAMPLES](https://docs.google.com/document/d/1VlWhIgEaAXIMvMekr4XYQ5yUQ-YrP-Y2-buNoIb8Iv0/edit) | |
 
 <br>
 ***~ COMING SOON ~***
