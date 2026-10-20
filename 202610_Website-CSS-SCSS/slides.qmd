@@ -491,7 +491,7 @@ This is the file we build today, one step at a time: **variables first, then rul
 The two markers are the ones from the previous slide. We start with a nearly empty file and add one piece at a time, rendering after each. (1 min)
 :::
 
-## Variables we'll set today {.smaller}
+## Variables we'll see today {.smaller}
 
 ::: {.nonincremental}
 :::: {.columns}
