@@ -17,14 +17,6 @@ toc: false
      They render with icons and colour automatically — no CSS needed.
      Add a title with ## inside, or omit it for a plain callout.     -->
 
-::: {.callout-note}
-## Next Session: June 23, 2026 · 09:00 UTC
-
-**Topic:** TADA-SORTEE code guidelines with [Ed Ivimey-Cook](https://eivimeycook.github.io/)
-
-Interested? [Become a SORTEE Member!](https://sortee.org/join/){target="_blank"}
-:::
-
 ::: {.callout-tip collapse="true"}
 ## 💡 New to the club? Start here
 
