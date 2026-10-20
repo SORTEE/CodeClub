@@ -32,14 +32,14 @@
     "href": "index.html",
     "title": "SORTEE Code Club",
     "section": "",
-    "text": "NoteNext Session: June 23, 2026 · 09:00 UTC\n\n\n\nTopic: TADA-SORTEE code guidelines with Ed Ivimey-Cook\nInterested? Become a SORTEE Member!\n\n\n\n\n\n\n\n\nTip💡 New to the club? Start here\n\n\n\n\n\n\nJoin SORTEE to get session links\nCheck out the resources page for beginner-friendly guides\nNo previous coding experience needed — all skill levels welcome!"
+    "text": "Tip💡 New to the club? Start here\n\n\n\n\n\n\nJoin SORTEE to get session links\nCheck out the resources page for beginner-friendly guides\nNo previous coding experience needed — all skill levels welcome!"
   },
   {
     "objectID": "index.html#announcements",
     "href": "index.html#announcements",
     "title": "SORTEE Code Club",
     "section": "",
-    "text": "NoteNext Session: June 23, 2026 · 09:00 UTC\n\n\n\nTopic: TADA-SORTEE code guidelines with Ed Ivimey-Cook\nInterested? Become a SORTEE Member!\n\n\n\n\n\n\n\n\nTip💡 New to the club? Start here\n\n\n\n\n\n\nJoin SORTEE to get session links\nCheck out the resources page for beginner-friendly guides\nNo previous coding experience needed — all skill levels welcome!"
+    "text": "Tip💡 New to the club? Start here\n\n\n\n\n\n\nJoin SORTEE to get session links\nCheck out the resources page for beginner-friendly guides\nNo previous coding experience needed — all skill levels welcome!"
   },
   {
     "objectID": "index.html#who-we-are",
@@ -88,7 +88,14 @@
     "href": "resources.html#quarto-website-resources",
     "title": "Learning Resources",
     "section": "Quarto Website Resources",
-    "text": "Quarto Website Resources\n\nPublish your Quarto website with Github Pages\nEverything about navbars, sidebars, footers\nAbout page templates\nDo you want a blog?\nThe theme gallery\n\n\n… for the adventurous!\nDo you want to customise your layout? You need .scss!\nSass is the name of the tool, SCSS is the syntax we use. When you search for resources you’ll find both names used interchangeably, and that’s fine. The one thing to watch out for: if an example you find doesn’t use curly braces {} and semicolons ;, it’s using the older Sass syntax — you can usually just add curly braces and semicolons to make it work as SCSS. Look at the example below!\n\nSassscss\n\n\n$primary: #2A7F62\n\nnav\n  background: $primary\n\n\n$primary: #2A7F62;\n\nnav {\n  background: $primary;\n}\n\n\n\n\nQuarto guide on customising\nSass Basics\nCSS with SCSS - Youtube\nHTML and CSS for absolute beginners - Youtube"
+    "text": "Quarto Website Resources\n\nPublish your Quarto website with Github Pages\nEverything about navbars, sidebars, footers\nAbout page templates\nDo you want a blog?"
+  },
+  {
+    "objectID": "resources.html#styling-your-quarto-website-css-scss",
+    "href": "resources.html#styling-your-quarto-website-css-scss",
+    "title": "Learning Resources",
+    "section": "Styling your Quarto website: CSS & SCSS",
+    "text": "Styling your Quarto website: CSS & SCSS\nDo you want to customise how your website looks? You need .scss!\nSass is the name of the tool, SCSS is the syntax we use. When you search for resources you’ll find both names used interchangeably, and that’s fine. The one thing to watch out for: if an example you find doesn’t use curly braces {} and semicolons ;, it’s using the older Sass syntax — you can usually just add curly braces and semicolons to make it work as SCSS. Look at the example below!\n\nSassscss\n\n\n$primary: #2A7F62\n\nnav\n  background: $primary\n\n\n$primary: #2A7F62;\n\nnav {\n  background: $primary;\n}\n\n\n\n\nCode Club Part 2: CSS & SCSS slides\nHandout and code (GitHub)\nThe theme gallery\nQuarto guide on customising\nSass Basics\nCSS with SCSS - Youtube\nHTML and CSS for absolute beginners - Youtube"
   },
   {
     "objectID": "resources.html#website-made-in-quarto-by-sortee-members",
