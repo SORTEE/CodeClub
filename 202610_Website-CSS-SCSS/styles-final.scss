@@ -1,0 +1,142 @@
+// =====================================================================
+// SORTEE Code Club · Part 2 · styles.scss (finished reference)
+// =====================================================================
+
+
+// ===== STEP 0 · Setup =====
+// 1. Create styles.scss next to _quarto.yml
+// 2. In _quarto.yml swap the theme line for:   theme: [flatly, styles.scss]
+// 3. Render.
+
+
+// ===== STEP 1 · Palette =====
+
+/*-- scss:defaults --*/
+
+
+$sortee-green: #0B5400; // the logo green: our single source of truth
+$primary: $sortee-green;
+$secondary: #357F2A;
+$body-bg: #ffffff;
+$body-color: #070F06; // green-tinted ink
+$link-color: $primary; // flatly's default teal link is only 2.4:1 on white
+$link-hover-color: $secondary;
+
+
+// ===== STEP 2 · Typography =====
+
+// HOW @import url(...) WORKS: it tells the browser to download a font file from Google Fonts when the page loads.
+// The link says which font families to fetch (family=Roboto, family=Roboto+Slab; a + is a space)
+// and which weights: wght@400;700 = regular and bold. Fonts that aren't in this link can't be used.
+// So the font name in the link must match the name you use in $font-family-sans-serif below. You need internet for it to work.
+//
+// TO USE A DIFFERENT FONT:
+// 1. Go to fonts.google.com, pick a font, click "Get embed code" -> "@import" and copy the url('...') part.
+// 2. Replace the link below with it (keep the @import url(' ... '); around it).
+// 3. Put the font's exact name in $font-family-sans-serif (body) and/or $headings-font-family (headings).
+// 4. Save and check the preview. Weights you didn't include in the link won't show up.
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@500;600&display=swap');
+$font-family-sans-serif: "Roboto", sans-serif;
+$headings-font-family: "Roboto Slab", serif;
+$headings-font-weight: 500; // Bootstrap: h4–h6
+$h1h2h3-font-weight: 500;   // Quarto's own variable for h1–h3
+$font-size-root: 18px;      // 1rem = 18px everywhere on the page
+$line-height-base: 1.6;
+
+
+// ===== STEP 3 · Quarto components =====
+
+$sortee-green-dark: #083B00;
+$navbar-bg: $sortee-green-dark; // wins over "background: primary" in _quarto.yml
+$navbar-fg: #ffffff;
+$navbar-hl: #C7FFBF; // mint for the current page
+$footer-bg: $sortee-green-dark; // wins over "background: dark" in _quarto.yml
+$footer-fg: #ffffff;
+$callout-color-note: $primary;
+$code-block-bg: #F0FFEE;
+$code-block-border-left: $sortee-green;
+
+
+// ===== STEP 4 · Shape =====
+// WHAT YOU'LL SEE: rounder callouts, code blocks and tabs; pill-shaped buttons.
+// WHY: one variable rounds everything; buttons have their own.
+
+$border-radius: 0.75rem;   // callouts, code blocks, tabs (callouts have no own variable)
+$btn-border-radius: 2rem;  // buttons only
+
+
+// ===== STEP 5 · First rules =====
+// WHAT YOU'LL SEE: underlined h2s, a tinted note, your own .my-box, uppercase menu, buttons that lift on hover, thicker callout edge, framed code blocks.
+// WHY: when no variable exists, write a CSS rule. Selectors decide WHAT it styles.
+
+/*-- scss:rules --*/
+
+h2 { border-bottom: 3px solid $primary; }   // element selector
+
+.callout-note { background-color: #ECFFEA; } // class selector
+
+// A class WE invent: nothing in Quarto is called "my-box". In any .qmd write:
+//   ::: {.my-box}
+//   Your text here
+//   :::
+.my-box {
+  background-color: #E8F7E5;
+  border-left: 5px solid $secondary;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link { text-transform: uppercase; } // descendant: .nav-link INSIDE .navbar
+
+// pseudo-class: only while the mouse is over it
+// translateY moves the element up/down without shifting its neighbours: -2px = up 2px (+ would be down)
+.btn:hover { transform: translateY(-2px); }
+
+// Nesting: & means "the selector I'm inside", so &:hover = .btn-outline-primary:hover
+.btn-outline-primary {
+  border-width: 2px;
+  &:hover { color: #ffffff; }
+}
+
+// Nesting, variants: &.callout-note has NO space = the SAME element with both classes.
+// .callout-title WITH a space = an element INSIDE it.
+.callout {
+  border-left-width: 6px;
+  &.callout-note {
+    border-left-color: $primary;
+    .callout-title { font-weight: 600; }
+  }
+}
+
+// Code blocks: a green frame with a thicker left edge (the two lines after "border" only override the left side)
+div.sourceCode {
+  border: 2px solid $primary;
+  border-left-width: 6px;
+}
+
+
+// ===== STEP 6 · DevTools challenge =====
+// WHAT YOU'LL SEE: the active tab in "Get Involved" turns green.
+// WHY: DevTools is how you find Quarto's class names yourself.
+//
+// CHALLENGE: Right-click → Inspect the active tab. Find its class. Make it green.
+// Hint: look for a class that only the selected tab has.
+
+// SOLUTION (uncomment to reveal):
+// .panel-tabset .nav-link.active {
+//   background-color: $primary;
+//   color: #ffffff;
+// }
+
+
+// =====================================================================
+// BONUS: not live-coded. Uncomment to try at home.
+// =====================================================================
+
+// BONUS A · Title banner in brand green while the navbar stays dark
+// /*-- scss:defaults --*/
+// $title-banner-bg: $primary;
+
+// BONUS B · Tip callouts in our secondary green instead of flatly's teal
+// /*-- scss:defaults --*/
+// $callout-color-tip: $secondary;

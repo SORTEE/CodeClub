@@ -7,6 +7,8 @@
 project:
   type: website         # other options: book, default (single doc)
   output-dir: _site     # where rendered HTML goes (add _site to .gitignore!)
+  resources:
+    - slides/css-scss.html   # finished Part 2 slides, copied as-is into the site
 ## Alternative:
 # output-dir: docs    # use this if deploying via GitHub Pages
                         # "main branch / docs folder" option instead of gh-pages.

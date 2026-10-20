@@ -1,0 +1,53 @@
+// Minimal revealjs theme for the slides.
+// Same brand variables as styles-final.scss, different target:
+// here they feed reveal.js instead of Bootstrap.
+
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@500;600&display=swap');
+
+$sortee-green: #0B5400;
+$primary: $sortee-green;
+$body-bg: #ffffff;
+$body-color: #070F06;
+$link-color: $primary;
+
+$font-family-sans-serif: "Roboto", sans-serif;
+$presentation-font-size-root: 32px;
+$presentation-heading-font: "Roboto Slab", serif;
+$presentation-heading-color: $sortee-green;
+$presentation-heading-font-weight: 600;
+
+$code-block-bg: #F0FFEE;
+$code-block-border-color: #B5FFAA;
+$code-block-font-size: 0.7em;
+
+/*-- scss:rules --*/
+.reveal h2 {
+  border-bottom: 3px solid $sortee-green;
+  padding-bottom: 0.2em;
+}
+
+// "Where we left off": keep the two screenshots inside the slide
+.reveal #where img { max-height: 380px; width: auto; }
+
+// Live DevTools demo: two rules fight over the outline colour.
+// reveal.js doesn't touch outline, so the only crossed-out line
+// in DevTools is the losing one.
+// The first has the higher score (10 + 10 = 20) and wins.
+// Ours has 10, so DevTools shows its outline-color crossed out.
+.demo-note {
+  outline: 6px solid;
+  outline-offset: 0.25em;
+  text-indent: 0.6em;
+}
+.demo-note.demo { outline-color: navy; }
+.demo-note { outline-color: $sortee-green; }
+
+// "Part N" divider slides: no underline, a bit bigger
+.reveal .section-slide h2 {
+  border-bottom: none;
+  font-size: 1.9em;
+}
+
+// Centre a block of text: add {.centered} to a div
+.reveal .centered { text-align: center; }
