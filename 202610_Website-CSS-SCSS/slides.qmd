@@ -53,19 +53,6 @@ Cecilia Baldoni
 Slides ~15 min · live coding ~40–45 min · Q&A
 
 
-## Follow along {#follow-along .smaller}
-
-::: {.nonincremental}
-1. **Download**: [github.com/SORTEE/CodeClub](https://github.com/SORTEE/CodeClub) → green **Code** → **Download ZIP** → unzip
-2. **Copy** the folder `20260519_WebsiteQuarto` and open it in RStudio or VS Code
-3. **Terminal**: run `quarto preview`
-4. **Edit and save**: the browser updates live
-
-Used Git before? `git clone https://github.com/SORTEE/CodeClub.git`
-:::
-
-Full steps and troubleshooting: `handout.md` in the repo.
-
 ## Part 1 · How is a web page built? {.center .section-slide}
 
 
@@ -564,3 +551,15 @@ What we skipped: `position`, flexbox and grid, media queries, partials and `@use
 - [CSS & SCSS, from scratch](https://cecibaldoni.github.io/content/css-scss-scrolly.html)
 
 
+## Follow along {#follow-along .smaller}
+
+::: {.nonincremental}
+1. **Download**: [github.com/SORTEE/CodeClub](https://github.com/SORTEE/CodeClub) → green **Code** → **Download ZIP** → unzip
+2. **Copy** the folder `20260519_WebsiteQuarto` and open it in RStudio or VS Code
+3. **Terminal**: run `quarto preview`
+4. **Edit and save**: the browser updates live
+
+Used Git before? `git clone https://github.com/SORTEE/CodeClub.git`
+:::
+
+Full steps and troubleshooting: `handout.md` in the repo.
